@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 560" width="900" height="560" role="img" aria-label="Wool vs. Cotton">
+  <rect width="900" height="560" fill="#E4A79A"/>
+  <circle cx="447" cy="440" r="111" fill="#8C4A34" opacity="0.15"/>
+<circle cx="125" cy="347" r="122" fill="#8C4A34" opacity="0.14"/>
+<circle cx="679" cy="80" r="118" fill="#8C4A34" opacity="0.14"/>
+<circle cx="674" cy="269" r="171" fill="#8C4A34" opacity="0.21"/>
+  <path d="M627.092256276583,488.6871424209441 q10.447959347587885,-9.403163412829096 20.89591869517577,0" stroke="#F7ECDA" stroke-width="3" fill="none" stroke-linecap="round" opacity="0.35" transform="rotate(1.5809490368797219 637.540215624171 488.6871424209441)"/>
+<path d="M837.3350231513896,188.53325429475322 q12.35959018412047,-11.123631165708424 24.71918036824094,0" stroke="#F7ECDA" stroke-width="3" fill="none" stroke-linecap="round" opacity="0.35" transform="rotate(179.54077592114837 849.6946133355101 188.53325429475322)"/>
+<path d="M474.36613325156657,400.59497363007426 q17.303228868569022,-15.57290598171212 34.606457737138044,0" stroke="#F7ECDA" stroke-width="3" fill="none" stroke-linecap="round" opacity="0.35" transform="rotate(196.16481260149607 491.6693621201356 400.59497363007426)"/>
+<path d="M641.8324583039896,159.70776153292454 q15.608551210040009,-14.047696089036009 31.217102420080018,0" stroke="#F7ECDA" stroke-width="3" fill="none" stroke-linecap="round" opacity="0.35" transform="rotate(320.7605129647418 657.4410095140296 159.70776153292454)"/>
+<path d="M621.2455956156559,331.9329392806629 q11.509172498598351,-10.358255248738516 23.018344997196703,0" stroke="#F7ECDA" stroke-width="3" fill="none" stroke-linecap="round" opacity="0.35" transform="rotate(337.89258547443154 632.7547681142543 331.9329392806629)"/>
+<path d="M68.69384366835783,436.65012507299457 q11.792720113392061,-10.613448102052855 23.585440226784122,0" stroke="#F7ECDA" stroke-width="3" fill="none" stroke-linecap="round" opacity="0.35" transform="rotate(179.88902770178902 80.4865637817499 436.65012507299457)"/>
+<path d="M591.4090606373915,298.01497464081075 q10.141392490996653,-9.127253241896987 20.282784981993306,0" stroke="#F7ECDA" stroke-width="3" fill="none" stroke-linecap="round" opacity="0.35" transform="rotate(72.87133787124088 601.5504531283881 298.01497464081075)"/>
+<path d="M375.8599700976752,175.44881381567058 q11.350854093284912,-10.215768683956421 22.701708186569824,0" stroke="#F7ECDA" stroke-width="3" fill="none" stroke-linecap="round" opacity="0.35" transform="rotate(43.56796299187857 387.2108241909601 175.44881381567058)"/>
+<path d="M621.6813851312731,302.25470314120133 q15.583417494754901,-14.02507574527941 31.166834989509802,0" stroke="#F7ECDA" stroke-width="3" fill="none" stroke-linecap="round" opacity="0.35" transform="rotate(10.587239956059635 637.2648026260281 302.25470314120133)"/>
+  <g transform="translate(450.0,263.2) scale(1.6)">
+    
+    <g>
+      <path d="M-38,-55 h76 v50 q40,4 50,50 q8,42 -33,52 q-52,12 -80,-22 q-18,-22 -10,-52 z" fill="#F7ECDA"/>
+      <rect x="-40" y="-95" width="80" height="18" fill="#8C4A34" opacity="0.9" rx="6"/>
+      <path d="M-40,-45 q80,-14 96,20" stroke="#8C4A34" stroke-width="6" fill="none" opacity="0.55" stroke-linecap="round"/>
+    </g>
+  </g>
+  <text x="450.0" y="524" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="22" fill="#F7ECDA" opacity="0.85">Wool vs. Cotton</text>
+</svg>

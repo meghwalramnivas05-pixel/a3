@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 560" width="700" height="560" role="img" aria-label="Cloud Wool">
+  <rect width="700" height="560" fill="#C1573A"/>
+  <circle cx="113" cy="152" r="135" fill="#3F5B4E" opacity="0.21"/>
+<circle cx="348" cy="379" r="112" fill="#3F5B4E" opacity="0.16"/>
+<circle cx="542" cy="290" r="207" fill="#3F5B4E" opacity="0.21"/>
+  <path d="M374.50286025763086,346.6454297717044 q19.804046318599283,-17.823641686739357 39.60809263719857,0" stroke="#F7ECDA" stroke-width="3" fill="none" stroke-linecap="round" opacity="0.35" transform="rotate(99.82470760068414 394.3069065762301 346.6454297717044)"/>
+<path d="M424.7658375668376,476.96872160187763 q20.905942278566418,-18.815348050709776 41.811884557132835,0" stroke="#F7ECDA" stroke-width="3" fill="none" stroke-linecap="round" opacity="0.35" transform="rotate(67.14452141913041 445.67177984540405 476.96872160187763)"/>
+<path d="M429.54735288339987,339.02710803991147 q16.04072606453257,-14.436653458079315 32.08145212906514,0" stroke="#F7ECDA" stroke-width="3" fill="none" stroke-linecap="round" opacity="0.35" transform="rotate(347.8312674710855 445.58807894793244 339.02710803991147)"/>
+<path d="M346.48498778740304,252.40806488864936 q21.322733879648283,-19.190460491683456 42.645467759296565,0" stroke="#F7ECDA" stroke-width="3" fill="none" stroke-linecap="round" opacity="0.35" transform="rotate(228.82313777117503 367.80772166705134 252.40806488864936)"/>
+<path d="M208.86230081236604,183.86674694116272 q15.953206798331962,-14.357886118498767 31.906413596663924,0" stroke="#F7ECDA" stroke-width="3" fill="none" stroke-linecap="round" opacity="0.35" transform="rotate(18.9352952503444 224.815507610698 183.86674694116272)"/>
+<path d="M402.66276696262867,398.8707226315259 q15.11370174424999,-13.602331569824992 30.22740348849998,0" stroke="#F7ECDA" stroke-width="3" fill="none" stroke-linecap="round" opacity="0.35" transform="rotate(304.77163270841214 417.77646870687863 398.8707226315259)"/>
+<path d="M601.4540324532493,308.0264182794054 q18.17623122742345,-16.358608104681107 36.3524624548469,0" stroke="#F7ECDA" stroke-width="3" fill="none" stroke-linecap="round" opacity="0.35" transform="rotate(42.212631935216514 619.6302636806728 308.0264182794054)"/>
+  <g transform="translate(350.0,263.2) scale(1.6)">
+    
+    <g>
+      <path d="M-38,-55 h76 v50 q40,4 50,50 q8,42 -33,52 q-52,12 -80,-22 q-18,-22 -10,-52 z" fill="#F7ECDA"/>
+      <rect x="-40" y="-95" width="80" height="18" fill="#3F5B4E" opacity="0.9" rx="6"/>
+      <path d="M-40,-45 q80,-14 96,20" stroke="#3F5B4E" stroke-width="6" fill="none" opacity="0.55" stroke-linecap="round"/>
+    </g>
+  </g>
+  <text x="350.0" y="524" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="22" fill="#F7ECDA" opacity="0.85">Cloud Wool</text>
+</svg>

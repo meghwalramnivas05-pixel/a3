@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 500" width="700" height="500" role="img" aria-label="Find Your Fit">
+  <rect width="700" height="500" fill="#7C9885"/>
+  <circle cx="92" cy="328" r="104" fill="#C1573A" opacity="0.16"/>
+<circle cx="446" cy="367" r="135" fill="#C1573A" opacity="0.16"/>
+<circle cx="81" cy="223" r="127" fill="#C1573A" opacity="0.20"/>
+  <path d="M272.03316453257975,268.88740409706827 q20.34443939775128,-18.309995457976154 40.68887879550256,0" stroke="#F7ECDA" stroke-width="3" fill="none" stroke-linecap="round" opacity="0.35" transform="rotate(63.59963191035978 292.377603930331 268.88740409706827)"/>
+<path d="M165.45069156291805,38.09376397064999 q11.399806401314365,-10.25982576118293 22.79961280262873,0" stroke="#F7ECDA" stroke-width="3" fill="none" stroke-linecap="round" opacity="0.35" transform="rotate(3.1700253193440853 176.8504979642324 38.09376397064999)"/>
+<path d="M111.8409961779886,256.17094382620405 q21.873914924530613,-19.686523432077554 43.747829849061226,0" stroke="#F7ECDA" stroke-width="3" fill="none" stroke-linecap="round" opacity="0.35" transform="rotate(249.66369411531772 133.7149111025192 256.17094382620405)"/>
+<path d="M255.1130242667184,207.2714808936652 q18.29571554094855,-16.466143986853695 36.5914310818971,0" stroke="#F7ECDA" stroke-width="3" fill="none" stroke-linecap="round" opacity="0.35" transform="rotate(117.40315414206958 273.40873980766696 207.2714808936652)"/>
+<path d="M63.93202179334,403.6853036077941 q17.406639470968997,-15.665975523872097 34.813278941937995,0" stroke="#F7ECDA" stroke-width="3" fill="none" stroke-linecap="round" opacity="0.35" transform="rotate(40.32353776667313 81.338661264309 403.6853036077941)"/>
+<path d="M57.634934105311956,67.58239583299078 q21.50707894403593,-19.356371049632337 43.01415788807186,0" stroke="#F7ECDA" stroke-width="3" fill="none" stroke-linecap="round" opacity="0.35" transform="rotate(38.778071548956966 79.14201304934788 67.58239583299078)"/>
+<path d="M418.52965034258557,461.30536593771114 q10.420039952804242,-9.378035957523817 20.840079905608484,0" stroke="#F7ECDA" stroke-width="3" fill="none" stroke-linecap="round" opacity="0.35" transform="rotate(138.91638483474148 428.9496902953898 461.30536593771114)"/>
+<path d="M323.42389342476844,437.6002571415998 q12.263117980662818,-11.036806182596536 24.526235961325636,0" stroke="#F7ECDA" stroke-width="3" fill="none" stroke-linecap="round" opacity="0.35" transform="rotate(93.00487271667902 335.68701140543124 437.6002571415998)"/>
+  <g transform="translate(350.0,235.0) scale(1.6)">
+    <g>
+      <rect x="-95" y="-25" width="190" height="50" rx="8" fill="#F7ECDA"/>
+      <g stroke="#C1573A" stroke-width="4">
+        <line x1="-75" y1="-25" x2="-75" y2="10"/>
+        <line x1="-45" y1="-25" x2="-45" y2="0"/>
+        <line x1="-15" y1="-25" x2="-15" y2="10"/>
+        <line x1="15" y1="-25" x2="15" y2="0"/>
+        <line x1="45" y1="-25" x2="45" y2="10"/>
+        <line x1="75" y1="-25" x2="75" y2="0"/>
+      </g>
+    </g>
+  </g>
+  <text x="350.0" y="464" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="22" fill="#F7ECDA" opacity="0.85">Find Your Fit</text>
+</svg>

@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 700" width="700" height="700" role="img" aria-label="Wool &amp; Boot Socks">
+  <rect width="700" height="700" fill="#E4A79A"/>
+  <circle cx="588" cy="601" r="251" fill="#8C4A34" opacity="0.11"/>
+<circle cx="402" cy="307" r="200" fill="#8C4A34" opacity="0.12"/>
+<circle cx="178" cy="319" r="157" fill="#8C4A34" opacity="0.15"/>
+<circle cx="84" cy="118" r="225" fill="#8C4A34" opacity="0.15"/>
+  <path d="M471.5849796875044,564.0738338764802 q12.19110264345421,-10.971992379108789 24.38220528690842,0" stroke="#F7ECDA" stroke-width="3" fill="none" stroke-linecap="round" opacity="0.35" transform="rotate(359.38174590646224 483.7760823309586 564.0738338764802)"/>
+<path d="M146.17871223565055,457.6586400675789 q11.101439360310309,-9.991295424279278 22.202878720620618,0" stroke="#F7ECDA" stroke-width="3" fill="none" stroke-linecap="round" opacity="0.35" transform="rotate(272.7853131260537 157.28015159596086 457.6586400675789)"/>
+<path d="M111.62577027794387,480.13575426134514 q18.6933919419807,-16.82405274778263 37.3867838839614,0" stroke="#F7ECDA" stroke-width="3" fill="none" stroke-linecap="round" opacity="0.35" transform="rotate(275.7394016129985 130.31916221992458 480.13575426134514)"/>
+<path d="M291.21307826837045,580.4366083759675 q21.854907390640104,-19.669416651576093 43.70981478128021,0" stroke="#F7ECDA" stroke-width="3" fill="none" stroke-linecap="round" opacity="0.35" transform="rotate(41.613754109601075 313.06798565901056 580.4366083759675)"/>
+<path d="M341.77372497400495,638.6413267964521 q18.86979483174221,-16.982815348567993 37.73958966348442,0" stroke="#F7ECDA" stroke-width="3" fill="none" stroke-linecap="round" opacity="0.35" transform="rotate(159.91462830801999 360.6435198057472 638.6413267964521)"/>
+<path d="M215.87719673366348,635.4096729824797 q11.02142074888021,-9.91927867399219 22.04284149776042,0" stroke="#F7ECDA" stroke-width="3" fill="none" stroke-linecap="round" opacity="0.35" transform="rotate(273.80014100229073 226.8986174825437 635.4096729824797)"/>
+  <g transform="translate(350.0,329.0) scale(1.6)">
+    <g>
+      <path d="M-25,-90 h55 v95 q35,5 55,35 q10,20 -10,30 h-140 q-15,-10 -5,-30 l30,-20 q15,-10 15,-40 Z" fill="#F7ECDA"/>
+      <rect x="-25" y="-90" width="55" height="20" fill="#8C4A34" opacity="0.9"/>
+      <path d="M-25,-55 h55 M-25,-25 h55" stroke="#8C4A34" stroke-width="4" opacity="0.5"/>
+    </g>
+  </g>
+  <text x="350.0" y="664" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="22" fill="#F7ECDA" opacity="0.85">Wool &amp; Boot Socks</text>
+</svg>

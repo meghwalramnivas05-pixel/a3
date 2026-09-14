@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 560" width="700" height="560" role="img" aria-label="Our Small Team">
+  <rect width="700" height="560" fill="#8C4A34"/>
+  <circle cx="111" cy="322" r="212" fill="#7C9885" opacity="0.14"/>
+<circle cx="375" cy="224" r="184" fill="#7C9885" opacity="0.18"/>
+<circle cx="405" cy="493" r="180" fill="#7C9885" opacity="0.14"/>
+  <path d="M194.5139745533091,281.0787835868662 q16.769773797673224,-15.092796417905902 33.53954759534645,0" stroke="#F7ECDA" stroke-width="3" fill="none" stroke-linecap="round" opacity="0.35" transform="rotate(165.94626893966188 211.28374835098234 281.0787835868662)"/>
+<path d="M388.4292417197193,273.56582680157953 q16.214791342661336,-14.593312208395202 32.42958268532267,0" stroke="#F7ECDA" stroke-width="3" fill="none" stroke-linecap="round" opacity="0.35" transform="rotate(72.80358137428044 404.64403306238063 273.56582680157953)"/>
+<path d="M85.19076440984553,156.57162040057986 q19.357789592823437,-17.422010633541095 38.715579185646874,0" stroke="#F7ECDA" stroke-width="3" fill="none" stroke-linecap="round" opacity="0.35" transform="rotate(9.147366506006676 104.54855400266896 156.57162040057986)"/>
+<path d="M240.24110488180446,240.86876746343253 q16.636726646813997,-14.973053982132598 33.273453293627995,0" stroke="#F7ECDA" stroke-width="3" fill="none" stroke-linecap="round" opacity="0.35" transform="rotate(156.06973666639382 256.87783152861846 240.86876746343253)"/>
+<path d="M557.0830817530383,500.38918445702984 q16.824492328897804,-15.142043096008024 33.64898465779561,0" stroke="#F7ECDA" stroke-width="3" fill="none" stroke-linecap="round" opacity="0.35" transform="rotate(72.89362403342153 573.9075740819361 500.38918445702984)"/>
+<path d="M570.7105217577856,459.2510025931085 q15.571014975022408,-14.013913477520168 31.142029950044815,0" stroke="#F7ECDA" stroke-width="3" fill="none" stroke-linecap="round" opacity="0.35" transform="rotate(287.2670406538295 586.281536732808 459.2510025931085)"/>
+<path d="M579.4199722113451,507.26363576697486 q12.74782514786474,-11.473042633078267 25.49565029572948,0" stroke="#F7ECDA" stroke-width="3" fill="none" stroke-linecap="round" opacity="0.35" transform="rotate(78.22986567346398 592.1677973592099 507.26363576697486)"/>
+<path d="M527.4332188991436,164.53798750419702 q13.292252752905947,-11.963027477615352 26.584505505811894,0" stroke="#F7ECDA" stroke-width="3" fill="none" stroke-linecap="round" opacity="0.35" transform="rotate(17.614535793760044 540.7254716520496 164.53798750419702)"/>
+<path d="M503.1493927630747,147.3982449051913 q12.040923587088558,-10.836831228379703 24.081847174177117,0" stroke="#F7ECDA" stroke-width="3" fill="none" stroke-linecap="round" opacity="0.35" transform="rotate(220.8278035725912 515.1903163501632 147.3982449051913)"/>
+<path d="M77.11220699775279,423.34093015258884 q10.983038155888673,-9.884734340299806 21.966076311777346,0" stroke="#F7ECDA" stroke-width="3" fill="none" stroke-linecap="round" opacity="0.35" transform="rotate(349.9063705563079 88.09524515364147 423.34093015258884)"/>
+  <g transform="translate(350.0,263.2) scale(1.6)">
+    <g>
+      <circle cx="0" cy="-10" r="88" fill="#F7ECDA"/>
+      <circle cx="0" cy="-35" r="32" fill="#7C9885"/>
+      <path d="M-55,55 q55,-50 110,0 z" fill="#7C9885"/>
+    </g>
+  </g>
+  <text x="350.0" y="524" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="22" fill="#F7ECDA" opacity="0.85">Our Small Team</text>
+</svg>

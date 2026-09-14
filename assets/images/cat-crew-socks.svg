@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 700" width="700" height="700" role="img" aria-label="Crew Socks">
+  <rect width="700" height="700" fill="#3F5B4E"/>
+  <circle cx="162" cy="456" r="215" fill="#E0A233" opacity="0.16"/>
+<circle cx="191" cy="514" r="239" fill="#E0A233" opacity="0.16"/>
+<circle cx="353" cy="202" r="126" fill="#E0A233" opacity="0.14"/>
+  <path d="M628.388515519216,123.43221174812872 q10.283393765665906,-9.255054389099316 20.566787531331812,0" stroke="#F7ECDA" stroke-width="3" fill="none" stroke-linecap="round" opacity="0.35" transform="rotate(359.50703532224924 638.6719092848818 123.43221174812872)"/>
+<path d="M133.2627419061024,110.97299982565474 q17.817054886695033,-16.03534939802553 35.634109773390065,0" stroke="#F7ECDA" stroke-width="3" fill="none" stroke-linecap="round" opacity="0.35" transform="rotate(124.432141522524 151.07979679279742 110.97299982565474)"/>
+<path d="M573.9032713293154,180.9971386912279 q21.513820742040394,-19.362438667836354 43.02764148408079,0" stroke="#F7ECDA" stroke-width="3" fill="none" stroke-linecap="round" opacity="0.35" transform="rotate(115.00266187934525 595.4170920713558 180.9971386912279)"/>
+<path d="M395.4965173904433,622.2151907366432 q18.22312442062453,-16.40081197856208 36.44624884124906,0" stroke="#F7ECDA" stroke-width="3" fill="none" stroke-linecap="round" opacity="0.35" transform="rotate(332.5857007116374 413.7196418110678 622.2151907366432)"/>
+<path d="M460.5360292673323,65.51741043925988 q20.576408626555075,-18.518767763899568 41.15281725311015,0" stroke="#F7ECDA" stroke-width="3" fill="none" stroke-linecap="round" opacity="0.35" transform="rotate(212.24009405843987 481.1124378938874 65.51741043925988)"/>
+<path d="M210.53145720226993,154.78367219667584 q20.197701732358432,-18.17793155912259 40.395403464716864,0" stroke="#F7ECDA" stroke-width="3" fill="none" stroke-linecap="round" opacity="0.35" transform="rotate(209.8166009120889 230.72915893462837 154.78367219667584)"/>
+<path d="M604.3987056150629,522.5898490050182 q21.534304584583637,-19.380874126125274 43.068609169167274,0" stroke="#F7ECDA" stroke-width="3" fill="none" stroke-linecap="round" opacity="0.35" transform="rotate(203.87265013174627 625.9330101996466 522.5898490050182)"/>
+<path d="M461.88181320905574,420.76451078751904 q13.100930915872881,-11.790837824285594 26.201861831745763,0" stroke="#F7ECDA" stroke-width="3" fill="none" stroke-linecap="round" opacity="0.35" transform="rotate(344.41812888938296 474.9827441249286 420.76451078751904)"/>
+<path d="M210.40198262027212,527.0990434925849 q21.455612059479932,-19.31005085353194 42.911224118959865,0" stroke="#F7ECDA" stroke-width="3" fill="none" stroke-linecap="round" opacity="0.35" transform="rotate(234.31537498164843 231.85759467975205 527.0990434925849)"/>
+  <g transform="translate(350.0,329.0) scale(1.6)">
+    
+    <g>
+      <path d="M-40,-95 h80 v90 q0,10 -10,10 h-15 q45,5 55,55 q8,45 -35,55 q-55,12 -85,-25 q-18,-22 -10,-55 l20,-40 q10,-15 0,-90 z" fill="#F7ECDA"/>
+      <rect x="-40" y="-95" width="80" height="18" fill="#E0A233" opacity="0.9" rx="6"/>
+      <path d="M-40,-45 q80,-14 96,20" stroke="#E0A233" stroke-width="6" fill="none" opacity="0.55" stroke-linecap="round"/>
+    </g>
+  </g>
+  <text x="350.0" y="664" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="22" fill="#F7ECDA" opacity="0.85">Crew Socks</text>
+</svg>

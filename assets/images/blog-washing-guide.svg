@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 560" width="900" height="560" role="img" aria-label="Sock Care 101">
+  <rect width="900" height="560" fill="#3F5B4E"/>
+  <circle cx="454" cy="259" r="163" fill="#E0A233" opacity="0.15"/>
+<circle cx="691" cy="127" r="151" fill="#E0A233" opacity="0.19"/>
+<circle cx="526" cy="462" r="133" fill="#E0A233" opacity="0.14"/>
+<circle cx="309" cy="115" r="109" fill="#E0A233" opacity="0.16"/>
+<circle cx="304" cy="316" r="208" fill="#E0A233" opacity="0.22"/>
+  <path d="M146.16244585592096,274.9082520577742 q16.061201777350448,-14.455081599615403 32.122403554700895,0" stroke="#F7ECDA" stroke-width="3" fill="none" stroke-linecap="round" opacity="0.35" transform="rotate(348.78561390074833 162.2236476332714 274.9082520577742)"/>
+<path d="M684.5491435553705,426.2444146585436 q18.160536908564602,-16.34448321770814 36.321073817129204,0" stroke="#F7ECDA" stroke-width="3" fill="none" stroke-linecap="round" opacity="0.35" transform="rotate(56.371380051222246 702.7096804639351 426.2444146585436)"/>
+<path d="M767.6379510682626,246.4754773800597 q16.993070528460553,-15.293763475614497 33.986141056921106,0" stroke="#F7ECDA" stroke-width="3" fill="none" stroke-linecap="round" opacity="0.35" transform="rotate(35.811149412410195 784.6310215967231 246.4754773800597)"/>
+<path d="M282.3196367631321,452.25596740894645 q11.491304321446062,-10.342173889301456 22.982608642892124,0" stroke="#F7ECDA" stroke-width="3" fill="none" stroke-linecap="round" opacity="0.35" transform="rotate(30.71643938150405 293.8109410845782 452.25596740894645)"/>
+<path d="M292.8762337164655,204.07842127306603 q15.894615657968174,-14.305154092171357 31.789231315936348,0" stroke="#F7ECDA" stroke-width="3" fill="none" stroke-linecap="round" opacity="0.35" transform="rotate(174.47946659509708 308.7708493744337 204.07842127306603)"/>
+<path d="M177.83030512827887,28.871227458179938 q14.286469850399003,-12.857822865359102 28.572939700798006,0" stroke="#F7ECDA" stroke-width="3" fill="none" stroke-linecap="round" opacity="0.35" transform="rotate(109.21252108878824 192.11677497867788 28.871227458179938)"/>
+<path d="M462.81244432242505,310.36105711285154 q18.585462434448694,-16.726916191003824 37.17092486889739,0" stroke="#F7ECDA" stroke-width="3" fill="none" stroke-linecap="round" opacity="0.35" transform="rotate(158.8284187747704 481.39790675687374 310.36105711285154)"/>
+<path d="M335.37575241194196,353.77780072455187 q20.87953149970115,-18.791578349731036 41.7590629994023,0" stroke="#F7ECDA" stroke-width="3" fill="none" stroke-linecap="round" opacity="0.35" transform="rotate(238.31422068998094 356.2552839116431 353.77780072455187)"/>
+<path d="M44.9915090225883,178.681052630401 q21.564749153630117,-19.408274238267108 43.129498307260235,0" stroke="#F7ECDA" stroke-width="3" fill="none" stroke-linecap="round" opacity="0.35" transform="rotate(346.90318441544247 66.55625817621842 178.681052630401)"/>
+  <g transform="translate(450.0,263.2) scale(1.6)">
+    <g>
+      <path d="M-55,-40 h90 v70 q0,35 -45,35 q-45,0 -45,-35 Z" fill="#F7ECDA"/>
+      <path d="M35,-15 q45,-5 45,30 q0,35 -45,30" fill="none" stroke="#F7ECDA" stroke-width="12"/>
+      <path d="M-45,-40 q10,-25 0,-45 M-15,-40 q10,-25 0,-45 M15,-40 q10,-25 0,-45" stroke="#E0A233" stroke-width="5" fill="none" opacity="0.7" stroke-linecap="round"/>
+    </g>
+  </g>
+  <text x="450.0" y="524" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="22" fill="#F7ECDA" opacity="0.85">Sock Care 101</text>
+</svg>

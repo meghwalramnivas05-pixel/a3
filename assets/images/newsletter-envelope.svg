@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 500" width="900" height="500" role="img" aria-label="Join the Warm List">
+  <rect width="900" height="500" fill="#E4A79A"/>
+  <circle cx="446" cy="273" r="171" fill="#8C4A34" opacity="0.14"/>
+<circle cx="321" cy="327" r="139" fill="#8C4A34" opacity="0.14"/>
+<circle cx="382" cy="182" r="107" fill="#8C4A34" opacity="0.18"/>
+<circle cx="734" cy="326" r="153" fill="#8C4A34" opacity="0.14"/>
+  <path d="M775.0256212814623,102.86210052161977 q21.647547079453865,-19.48279237150848 43.29509415890773,0" stroke="#F7ECDA" stroke-width="3" fill="none" stroke-linecap="round" opacity="0.35" transform="rotate(85.7191592550504 796.6731683609162 102.86210052161977)"/>
+<path d="M407.17988245895145,428.9927180996301 q14.269284531869689,-12.84235607868272 28.538569063739377,0" stroke="#F7ECDA" stroke-width="3" fill="none" stroke-linecap="round" opacity="0.35" transform="rotate(182.89845725407915 421.44916699082114 428.9927180996301)"/>
+<path d="M154.0124946732193,457.5188142603491 q21.823391971323055,-19.64105277419075 43.64678394264611,0" stroke="#F7ECDA" stroke-width="3" fill="none" stroke-linecap="round" opacity="0.35" transform="rotate(61.80893146535297 175.83588664454234 457.5188142603491)"/>
+<path d="M128.20898767018437,237.64838212721037 q16.224721820853347,-14.602249638768013 32.449443641706694,0" stroke="#F7ECDA" stroke-width="3" fill="none" stroke-linecap="round" opacity="0.35" transform="rotate(279.1075100947704 144.43370949103772 237.64838212721037)"/>
+<path d="M310.7008795630184,290.54616459246216 q11.923969151815857,-10.731572236634271 23.847938303631715,0" stroke="#F7ECDA" stroke-width="3" fill="none" stroke-linecap="round" opacity="0.35" transform="rotate(76.54153271552097 322.6248487148343 290.54616459246216)"/>
+<path d="M92.05851386560994,270.6105683114073 q16.75335079604591,-15.078015716441321 33.50670159209182,0" stroke="#F7ECDA" stroke-width="3" fill="none" stroke-linecap="round" opacity="0.35" transform="rotate(222.11877214336195 108.81186466165585 270.6105683114073)"/>
+<path d="M788.7460657846767,162.89365927753556 q14.111706110445333,-12.7005354994008 28.223412220890665,0" stroke="#F7ECDA" stroke-width="3" fill="none" stroke-linecap="round" opacity="0.35" transform="rotate(166.7033642841917 802.857771895122 162.89365927753556)"/>
+  <g transform="translate(450.0,235.0) scale(1.6)">
+    <g>
+      <rect x="-90" y="-55" width="180" height="110" rx="10" fill="#F7ECDA"/>
+      <path d="M-90,-55 L0,15 L90,-55" fill="none" stroke="#8C4A34" stroke-width="8" stroke-linecap="round"/>
+    </g>
+  </g>
+  <text x="450.0" y="464" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="22" fill="#F7ECDA" opacity="0.85">Join the Warm List</text>
+</svg>

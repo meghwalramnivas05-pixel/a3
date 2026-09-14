@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 560" width="900" height="560" role="img" aria-label="Gifting Guide">
+  <rect width="900" height="560" fill="#7C9885"/>
+  <circle cx="617" cy="465" r="105" fill="#C1573A" opacity="0.10"/>
+<circle cx="805" cy="199" r="123" fill="#C1573A" opacity="0.16"/>
+<circle cx="487" cy="387" r="169" fill="#C1573A" opacity="0.17"/>
+<circle cx="634" cy="173" r="153" fill="#C1573A" opacity="0.21"/>
+<circle cx="612" cy="326" r="115" fill="#C1573A" opacity="0.21"/>
+  <path d="M195.38152825987166,337.9865113298648 q11.285323886949385,-10.156791498254448 22.57064777389877,0" stroke="#F7ECDA" stroke-width="3" fill="none" stroke-linecap="round" opacity="0.35" transform="rotate(325.864040705497 206.66685214682104 337.9865113298648)"/>
+<path d="M181.32730700136864,260.4554555400327 q19.254843817353535,-17.329359435618183 38.50968763470707,0" stroke="#F7ECDA" stroke-width="3" fill="none" stroke-linecap="round" opacity="0.35" transform="rotate(326.8440887676024 200.58215081872217 260.4554555400327)"/>
+<path d="M500.16021926716803,371.3359265758504 q16.43657232964666,-14.792915096681993 32.87314465929332,0" stroke="#F7ECDA" stroke-width="3" fill="none" stroke-linecap="round" opacity="0.35" transform="rotate(304.66540182652324 516.5967915968147 371.3359265758504)"/>
+<path d="M209.6967263112694,372.77010988704444 q17.21554454308549,-15.49399008877694 34.43108908617098,0" stroke="#F7ECDA" stroke-width="3" fill="none" stroke-linecap="round" opacity="0.35" transform="rotate(167.73752673615925 226.9122708543549 372.77010988704444)"/>
+<path d="M377.1155780866804,30.71618497628711 q16.74881885101827,-15.073936965916443 33.49763770203654,0" stroke="#F7ECDA" stroke-width="3" fill="none" stroke-linecap="round" opacity="0.35" transform="rotate(155.11253750914327 393.86439693769864 30.71618497628711)"/>
+<path d="M525.5979676515399,256.056811400574 q21.079701585854735,-18.971731427269262 42.15940317170947,0" stroke="#F7ECDA" stroke-width="3" fill="none" stroke-linecap="round" opacity="0.35" transform="rotate(246.24908001371813 546.6776692373946 256.056811400574)"/>
+<path d="M553.4188090627966,139.10058152675504 q14.997892441240335,-13.498103197116302 29.99578488248067,0" stroke="#F7ECDA" stroke-width="3" fill="none" stroke-linecap="round" opacity="0.35" transform="rotate(340.5040448867039 568.416701504037 139.10058152675504)"/>
+<path d="M313.9859018010154,110.05612252432913 q14.584104737538608,-13.125694263784748 29.168209475077216,0" stroke="#F7ECDA" stroke-width="3" fill="none" stroke-linecap="round" opacity="0.35" transform="rotate(51.80615231760543 328.570006538554 110.05612252432913)"/>
+  <g transform="translate(450.0,263.2) scale(1.6)">
+    <g>
+      <path d="M-80,-20 L0,-55 L80,-20 L80,55 L0,90 L-80,55 Z" fill="#F7ECDA"/>
+      <path d="M-80,-20 L0,-55 L80,-20 L0,15 Z" fill="#C1573A" opacity="0.9"/>
+      <path d="M0,15 L0,90" stroke="#2E2A26" stroke-width="4" opacity="0.25"/>
+      <path d="M-30,-40 L-30,32" stroke="#2E2A26" stroke-width="6" opacity="0.35"/>
+    </g>
+  </g>
+  <text x="450.0" y="524" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="22" fill="#F7ECDA" opacity="0.85">Gifting Guide</text>
+</svg>

@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 900" width="1400" height="900" role="img" aria-label="hero-cozy-socks.svg">
+  <rect width="1400" height="900" fill="#C1573A"/>
+  <circle cx="647" cy="493" r="328" fill="#3F5B4E" opacity="0.16"/>
+<circle cx="709" cy="513" r="195" fill="#3F5B4E" opacity="0.16"/>
+<circle cx="845" cy="661" r="179" fill="#3F5B4E" opacity="0.14"/>
+<circle cx="242" cy="673" r="287" fill="#3F5B4E" opacity="0.11"/>
+  <path d="M649.9621294940725,577.5527271523767 q17.996925653498057,-16.197233088148252 35.99385130699611,0" stroke="#F7ECDA" stroke-width="3" fill="none" stroke-linecap="round" opacity="0.35" transform="rotate(51.336127053132394 667.9590551475706 577.5527271523767)"/>
+<path d="M70.39558061974564,348.5511385713251 q13.288577673739976,-11.95971990636598 26.577155347479952,0" stroke="#F7ECDA" stroke-width="3" fill="none" stroke-linecap="round" opacity="0.35" transform="rotate(291.72529880463014 83.68415829348562 348.5511385713251)"/>
+<path d="M923.4484622557023,532.1802013694638 q16.698280573040176,-15.02845251573616 33.39656114608035,0" stroke="#F7ECDA" stroke-width="3" fill="none" stroke-linecap="round" opacity="0.35" transform="rotate(238.07559091392037 940.1467428287425 532.1802013694638)"/>
+<path d="M241.13431346606308,401.4443814590635 q11.947207868666663,-10.752487081799996 23.894415737333325,0" stroke="#F7ECDA" stroke-width="3" fill="none" stroke-linecap="round" opacity="0.35" transform="rotate(326.1502733505561 253.08152133472973 401.4443814590635)"/>
+<path d="M133.2233369340607,708.2443035520851 q10.895315603630529,-9.805784043267476 21.790631207261058,0" stroke="#F7ECDA" stroke-width="3" fill="none" stroke-linecap="round" opacity="0.35" transform="rotate(247.30038147367503 144.11865253769125 708.2443035520851)"/>
+<path d="M474.5106465038764,372.7375693342058 q20.10884041375074,-18.097956372375666 40.21768082750148,0" stroke="#F7ECDA" stroke-width="3" fill="none" stroke-linecap="round" opacity="0.35" transform="rotate(6.697548112320999 494.6194869176271 372.7375693342058)"/>
+<path d="M130.48160620096834,786.1772511620569 q16.107110997132416,-14.496399897419176 32.21422199426483,0" stroke="#F7ECDA" stroke-width="3" fill="none" stroke-linecap="round" opacity="0.35" transform="rotate(32.75207606109 146.58871719810077 786.1772511620569)"/>
+<path d="M1302.438496277253,811.8375451820492 q11.350331633764316,-10.215298470387886 22.700663267528633,0" stroke="#F7ECDA" stroke-width="3" fill="none" stroke-linecap="round" opacity="0.35" transform="rotate(152.3543804114737 1313.7888279110175 811.8375451820492)"/>
+<path d="M222.73014781668948,298.15796229573715 q17.457423379257186,-15.711681041331468 34.91484675851437,0" stroke="#F7ECDA" stroke-width="3" fill="none" stroke-linecap="round" opacity="0.35" transform="rotate(58.86868619483328 240.18757119594667 298.15796229573715)"/>
+<path d="M935.9568868408911,86.59618690365389 q12.054569110922305,-10.849112199830074 24.10913822184461,0" stroke="#F7ECDA" stroke-width="3" fill="none" stroke-linecap="round" opacity="0.35" transform="rotate(293.65115337146074 948.0114559518134 86.59618690365389)"/>
+  <g transform="translate(700.0,423.0) scale(1.6)">
+    
+    <g>
+      <path d="M-40,-95 h80 v90 q0,10 -10,10 h-15 q45,5 55,55 q8,45 -35,55 q-55,12 -85,-25 q-18,-22 -10,-55 l20,-40 q10,-15 0,-90 z" fill="#F7ECDA"/>
+      <rect x="-40" y="-95" width="80" height="18" fill="#3F5B4E" opacity="0.9" rx="6"/>
+      <path d="M-40,-45 q80,-14 96,20" stroke="#3F5B4E" stroke-width="6" fill="none" opacity="0.55" stroke-linecap="round"/>
+    </g>
+  </g>
+  
+</svg>

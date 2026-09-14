@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 560" width="700" height="560" role="img" aria-label="The Classic Crew">
+  <rect width="700" height="560" fill="#8C4A34"/>
+  <circle cx="77" cy="106" r="145" fill="#7C9885" opacity="0.18"/>
+<circle cx="148" cy="106" r="127" fill="#7C9885" opacity="0.19"/>
+<circle cx="153" cy="388" r="175" fill="#7C9885" opacity="0.12"/>
+  <path d="M70.13818378234816,135.6628618903541 q13.637540045233425,-12.273786040710084 27.27508009046685,0" stroke="#F7ECDA" stroke-width="3" fill="none" stroke-linecap="round" opacity="0.35" transform="rotate(324.0769258559211 83.77572382758159 135.6628618903541)"/>
+<path d="M336.43624570538066,391.00124772957963 q11.202824413006338,-10.082541971705705 22.405648826012676,0" stroke="#F7ECDA" stroke-width="3" fill="none" stroke-linecap="round" opacity="0.35" transform="rotate(183.21374057920866 347.639070118387 391.00124772957963)"/>
+<path d="M544.7995361539529,291.49085262452 q21.336409061490947,-19.202768155341854 42.672818122981894,0" stroke="#F7ECDA" stroke-width="3" fill="none" stroke-linecap="round" opacity="0.35" transform="rotate(317.4480480608161 566.1359452154438 291.49085262452)"/>
+<path d="M249.642017255614,28.37603325675743 q19.063206235903635,-17.15688561231327 38.12641247180727,0" stroke="#F7ECDA" stroke-width="3" fill="none" stroke-linecap="round" opacity="0.35" transform="rotate(45.50731442032582 268.70522349151764 28.37603325675743)"/>
+<path d="M20.814725379721743,396.26481263033213 q20.11410345461652,-18.102693109154867 40.22820690923304,0" stroke="#F7ECDA" stroke-width="3" fill="none" stroke-linecap="round" opacity="0.35" transform="rotate(301.16791057302663 40.92882883433826 396.26481263033213)"/>
+<path d="M624.6866155027976,129.641804821146 q10.978009164409997,-9.880208247968998 21.956018328819994,0" stroke="#F7ECDA" stroke-width="3" fill="none" stroke-linecap="round" opacity="0.35" transform="rotate(43.47002247465434 635.6646246672076 129.641804821146)"/>
+<path d="M639.0652682764554,84.41040097734881 q11.914509156840188,-10.723058241156169 23.829018313680375,0" stroke="#F7ECDA" stroke-width="3" fill="none" stroke-linecap="round" opacity="0.35" transform="rotate(7.235852742939097 650.9797774332956 84.41040097734881)"/>
+<path d="M51.84293083859837,47.28636056183726 q14.236388584386113,-12.812749725947501 28.472777168772225,0" stroke="#F7ECDA" stroke-width="3" fill="none" stroke-linecap="round" opacity="0.35" transform="rotate(58.77659654976315 66.07931942298448 47.28636056183726)"/>
+<path d="M218.0852701551857,496.12034344796814 q12.009786504624039,-10.808807854161635 24.019573009248077,0" stroke="#F7ECDA" stroke-width="3" fill="none" stroke-linecap="round" opacity="0.35" transform="rotate(293.16826919104983 230.09505665980973 496.12034344796814)"/>
+  <g transform="translate(350.0,263.2) scale(1.6)">
+    
+    <g>
+      <path d="M-40,-95 h80 v90 q0,10 -10,10 h-15 q45,5 55,55 q8,45 -35,55 q-55,12 -85,-25 q-18,-22 -10,-55 l20,-40 q10,-15 0,-90 z" fill="#F7ECDA"/>
+      <rect x="-40" y="-95" width="80" height="18" fill="#7C9885" opacity="0.9" rx="6"/>
+      <path d="M-40,-45 q80,-14 96,20" stroke="#7C9885" stroke-width="6" fill="none" opacity="0.55" stroke-linecap="round"/>
+    </g>
+  </g>
+  <text x="350.0" y="524" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="22" fill="#F7ECDA" opacity="0.85">The Classic Crew</text>
+</svg>

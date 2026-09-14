@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 560" width="900" height="560" role="img" aria-label="A Short History">
+  <rect width="900" height="560" fill="#C1573A"/>
+  <circle cx="660" cy="70" r="195" fill="#3F5B4E" opacity="0.14"/>
+<circle cx="99" cy="87" r="157" fill="#3F5B4E" opacity="0.18"/>
+<circle cx="681" cy="422" r="112" fill="#3F5B4E" opacity="0.20"/>
+  <path d="M143.1540989425216,123.34436214762295 q20.06928960799239,-18.06236064719315 40.13857921598478,0" stroke="#F7ECDA" stroke-width="3" fill="none" stroke-linecap="round" opacity="0.35" transform="rotate(194.5968365429907 163.22338855051402 123.34436214762295)"/>
+<path d="M255.97808942488888,197.05818501810003 q16.519685391061547,-14.867716851955393 33.03937078212309,0" stroke="#F7ECDA" stroke-width="3" fill="none" stroke-linecap="round" opacity="0.35" transform="rotate(117.99788443070707 272.49777481595044 197.05818501810003)"/>
+<path d="M605.6544693071517,89.70834537897353 q14.364191533500875,-12.927772380150788 28.72838306700175,0" stroke="#F7ECDA" stroke-width="3" fill="none" stroke-linecap="round" opacity="0.35" transform="rotate(99.39714445732919 620.0186608406525 89.70834537897353)"/>
+<path d="M640.2658104086435,449.4672267016522 q16.167699272861903,-14.550929345575712 32.335398545723805,0" stroke="#F7ECDA" stroke-width="3" fill="none" stroke-linecap="round" opacity="0.35" transform="rotate(321.29008510997073 656.4335096815054 449.4672267016522)"/>
+<path d="M88.35851421363782,367.78135524150844 q13.004799629105513,-11.704319666194962 26.009599258211026,0" stroke="#F7ECDA" stroke-width="3" fill="none" stroke-linecap="round" opacity="0.35" transform="rotate(67.48504856167223 101.36331384274332 367.78135524150844)"/>
+<path d="M485.3178576889445,69.0601890836333 q10.341146024792335,-9.307031422313102 20.68229204958467,0" stroke="#F7ECDA" stroke-width="3" fill="none" stroke-linecap="round" opacity="0.35" transform="rotate(100.36727540698423 495.65900371373687 69.0601890836333)"/>
+<path d="M507.60788527790515,357.4779582940769 q19.749478617319994,-17.774530755587996 39.49895723463999,0" stroke="#F7ECDA" stroke-width="3" fill="none" stroke-linecap="round" opacity="0.35" transform="rotate(116.77333023630356 527.3573638952251 357.4779582940769)"/>
+<path d="M552.2639898994225,519.7551185758937 q21.453738223091605,-19.308364400782445 42.90747644618321,0" stroke="#F7ECDA" stroke-width="3" fill="none" stroke-linecap="round" opacity="0.35" transform="rotate(74.45610706155263 573.7177281225141 519.7551185758937)"/>
+<path d="M309.01072493722523,126.39897587862703 q17.14541354819493,-15.430872193375437 34.29082709638986,0" stroke="#F7ECDA" stroke-width="3" fill="none" stroke-linecap="round" opacity="0.35" transform="rotate(172.81435082363691 326.1561384854202 126.39897587862703)"/>
+<path d="M490.8133485398915,176.73671419891716 q21.14115294523952,-19.027037650715567 42.28230589047904,0" stroke="#F7ECDA" stroke-width="3" fill="none" stroke-linecap="round" opacity="0.35" transform="rotate(37.79212998557648 511.954501485131 176.73671419891716)"/>
+  <g transform="translate(450.0,263.2) scale(1.6)">
+    <g><polygon points="0.0,-85.0 21.2,-29.1 80.8,-26.3 34.2,11.1 50.0,68.8 0.0,36.0 -50.0,68.8 -34.2,11.1 -80.8,-26.3 -21.2,-29.1" fill="#F7ECDA"/><circle r="14" fill="#3F5B4E"/></g>
+  </g>
+  <text x="450.0" y="524" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="22" fill="#F7ECDA" opacity="0.85">A Short History</text>
+</svg>

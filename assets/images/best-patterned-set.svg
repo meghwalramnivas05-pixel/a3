@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 560" width="700" height="560" role="img" aria-label="Patterned Fun Set">
+  <rect width="700" height="560" fill="#3F5B4E"/>
+  <circle cx="389" cy="339" r="192" fill="#E0A233" opacity="0.13"/>
+<circle cx="435" cy="455" r="203" fill="#E0A233" opacity="0.12"/>
+<circle cx="435" cy="332" r="157" fill="#E0A233" opacity="0.22"/>
+<circle cx="366" cy="255" r="206" fill="#E0A233" opacity="0.18"/>
+<circle cx="239" cy="195" r="156" fill="#E0A233" opacity="0.11"/>
+  <path d="M348.10937678965684,323.21641479393026 q20.119914462802907,-18.107923016522616 40.23982892560581,0" stroke="#F7ECDA" stroke-width="3" fill="none" stroke-linecap="round" opacity="0.35" transform="rotate(323.5120708552535 368.22929125245975 323.21641479393026)"/>
+<path d="M569.3914270276581,211.8066842042238 q21.386085277608245,-19.247476749847422 42.77217055521649,0" stroke="#F7ECDA" stroke-width="3" fill="none" stroke-linecap="round" opacity="0.35" transform="rotate(152.6668308971609 590.7775123052663 211.8066842042238)"/>
+<path d="M211.75563474777297,75.64457981557061 q16.140137447941434,-14.526123703147292 32.28027489588287,0" stroke="#F7ECDA" stroke-width="3" fill="none" stroke-linecap="round" opacity="0.35" transform="rotate(55.73640551222651 227.89577219571441 75.64457981557061)"/>
+<path d="M188.44809724984862,335.73501480177015 q19.316529556061443,-17.3848766004553 38.633059112122886,0" stroke="#F7ECDA" stroke-width="3" fill="none" stroke-linecap="round" opacity="0.35" transform="rotate(270.9580757363467 207.76462680591007 335.73501480177015)"/>
+<path d="M76.37140229266768,58.86155302880926 q13.062602466924577,-11.75634222023212 26.125204933849155,0" stroke="#F7ECDA" stroke-width="3" fill="none" stroke-linecap="round" opacity="0.35" transform="rotate(198.70572219626698 89.43400475959226 58.86155302880926)"/>
+<path d="M542.2665190222085,431.4344341376167 q21.205000236637858,-19.084500212974074 42.410000473275716,0" stroke="#F7ECDA" stroke-width="3" fill="none" stroke-linecap="round" opacity="0.35" transform="rotate(211.9652229135724 563.4715192588463 431.4344341376167)"/>
+<path d="M422.348230829468,175.14645254856467 q13.766225416611745,-12.38960287495057 27.53245083322349,0" stroke="#F7ECDA" stroke-width="3" fill="none" stroke-linecap="round" opacity="0.35" transform="rotate(74.16120561303111 436.1144562460797 175.14645254856467)"/>
+  <g transform="translate(350.0,263.2) scale(1.6)">
+    <path d="M0,70 C-70,20 -75,-40 -30,-60 C-5,-72 0,-45 0,-30 C0,-45 5,-72 30,-60 C75,-40 70,20 0,70 Z" fill="#F7ECDA"/>
+  </g>
+  <text x="350.0" y="524" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="22" fill="#F7ECDA" opacity="0.85">Patterned Fun Set</text>
+</svg>

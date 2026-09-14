@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 700" width="700" height="700" role="img" aria-label="Ankle Socks">
+  <rect width="700" height="700" fill="#E0A233"/>
+  <circle cx="607" cy="149" r="129" fill="#F7ECDA" opacity="0.22"/>
+<circle cx="173" cy="138" r="217" fill="#F7ECDA" opacity="0.14"/>
+<circle cx="568" cy="200" r="260" fill="#F7ECDA" opacity="0.14"/>
+  <path d="M596.9559083957624,632.6216401357016 q20.70920012858295,-18.638280115724655 41.4184002571659,0" stroke="#2E2A26" stroke-width="3" fill="none" stroke-linecap="round" opacity="0.35" transform="rotate(30.078243659046105 617.6651085243454 632.6216401357016)"/>
+<path d="M391.6160968165971,301.96086718802565 q16.361056121416077,-14.72495050927447 32.722112242832154,0" stroke="#2E2A26" stroke-width="3" fill="none" stroke-linecap="round" opacity="0.35" transform="rotate(46.90905884909299 407.9771529380132 301.96086718802565)"/>
+<path d="M143.30573917186777,315.08135153999814 q12.65247007788663,-11.387223070097967 25.30494015577326,0" stroke="#2E2A26" stroke-width="3" fill="none" stroke-linecap="round" opacity="0.35" transform="rotate(163.8118651851779 155.9582092497544 315.08135153999814)"/>
+<path d="M32.08309111548925,89.03767435403822 q18.52009840293892,-16.66808856264503 37.04019680587784,0" stroke="#2E2A26" stroke-width="3" fill="none" stroke-linecap="round" opacity="0.35" transform="rotate(151.6494101811099 50.603189518428174 89.03767435403822)"/>
+<path d="M343.65141604974986,497.55171963360215 q14.307956317434396,-12.877160685690956 28.615912634868792,0" stroke="#2E2A26" stroke-width="3" fill="none" stroke-linecap="round" opacity="0.35" transform="rotate(20.71963067371865 357.95937236718424 497.55171963360215)"/>
+<path d="M510.4595318599189,406.1477941463631 q17.894952521198746,-16.105457269078872 35.78990504239749,0" stroke="#2E2A26" stroke-width="3" fill="none" stroke-linecap="round" opacity="0.35" transform="rotate(223.5569238497041 528.3544843811177 406.1477941463631)"/>
+<path d="M627.4457540278205,263.5592866412083 q19.11743934692237,-17.205695412230135 38.23487869384474,0" stroke="#2E2A26" stroke-width="3" fill="none" stroke-linecap="round" opacity="0.35" transform="rotate(132.72617331655445 646.5631933747429 263.5592866412083)"/>
+  <g transform="translate(350.0,329.0) scale(1.6)">
+    
+    <g>
+      <path d="M-38,-55 h76 v50 q40,4 50,50 q8,42 -33,52 q-52,12 -80,-22 q-18,-22 -10,-52 z" fill="#2E2A26"/>
+      <rect x="-40" y="-95" width="80" height="18" fill="#F7ECDA" opacity="0.9" rx="6"/>
+      <path d="M-40,-45 q80,-14 96,20" stroke="#F7ECDA" stroke-width="6" fill="none" opacity="0.55" stroke-linecap="round"/>
+    </g>
+  </g>
+  <text x="350.0" y="664" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="22" fill="#2E2A26" opacity="0.85">Ankle Socks</text>
+</svg>

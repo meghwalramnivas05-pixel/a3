@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300" width="300" height="300" role="img" aria-label="avatar-04.svg">
+  <rect width="300" height="300" fill="#8C4A34"/>
+  <circle cx="260" cy="239" r="98" fill="#7C9885" opacity="0.13"/>
+<circle cx="109" cy="201" r="102" fill="#7C9885" opacity="0.10"/>
+<circle cx="70" cy="245" r="61" fill="#7C9885" opacity="0.18"/>
+  <path d="M232.59814033178097,109.26203464564001 q19.48868391887197,-17.539815526984775 38.97736783774394,0" stroke="#F7ECDA" stroke-width="3" fill="none" stroke-linecap="round" opacity="0.35" transform="rotate(342.5714966707992 252.08682425065294 109.26203464564001)"/>
+<path d="M85.2826807050192,222.44692865035006 q14.016384329742232,-12.614745896768008 28.032768659484464,0" stroke="#F7ECDA" stroke-width="3" fill="none" stroke-linecap="round" opacity="0.35" transform="rotate(58.96387745389829 99.29906503476144 222.44692865035006)"/>
+<path d="M97.27102222685413,217.8315972545302 q11.770805576442935,-10.593725018798642 23.54161115288587,0" stroke="#F7ECDA" stroke-width="3" fill="none" stroke-linecap="round" opacity="0.35" transform="rotate(237.33122633817229 109.04182780329707 217.8315972545302)"/>
+<path d="M94.67975978541381,60.63872015948215 q15.161407406531461,-13.645266665878315 30.322814813062923,0" stroke="#F7ECDA" stroke-width="3" fill="none" stroke-linecap="round" opacity="0.35" transform="rotate(139.12647887213495 109.84116719194527 60.63872015948215)"/>
+<path d="M118.25167535251698,252.9036821827961 q21.044352323706516,-18.939917091335865 42.08870464741303,0" stroke="#F7ECDA" stroke-width="3" fill="none" stroke-linecap="round" opacity="0.35" transform="rotate(81.80931072337061 139.2960276762235 252.9036821827961)"/>
+<path d="M260.20145528361707,180.24497035089578 q21.516945503483612,-19.365250953135252 43.033891006967224,0" stroke="#F7ECDA" stroke-width="3" fill="none" stroke-linecap="round" opacity="0.35" transform="rotate(294.0335395658463 281.7184007871007 180.24497035089578)"/>
+<path d="M135.80369207073852,82.72589710737132 q21.15292462652769,-19.03763216387492 42.30584925305538,0" stroke="#F7ECDA" stroke-width="3" fill="none" stroke-linecap="round" opacity="0.35" transform="rotate(359.6914730723772 156.9566166972662 82.72589710737132)"/>
+  <g transform="translate(150.0,141.0) scale(1.6)">
+    <g>
+      <circle cx="0" cy="-10" r="88" fill="#F7ECDA"/>
+      <circle cx="0" cy="-35" r="32" fill="#7C9885"/>
+      <path d="M-55,55 q55,-50 110,0 z" fill="#7C9885"/>
+    </g>
+  </g>
+  
+</svg>

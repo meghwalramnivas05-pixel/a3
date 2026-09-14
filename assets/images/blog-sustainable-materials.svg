@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 560" width="900" height="560" role="img" aria-label="Sustainable Fibers">
+  <rect width="900" height="560" fill="#8C4A34"/>
+  <circle cx="234" cy="332" r="113" fill="#7C9885" opacity="0.21"/>
+<circle cx="228" cy="263" r="187" fill="#7C9885" opacity="0.21"/>
+<circle cx="509" cy="361" r="161" fill="#7C9885" opacity="0.20"/>
+  <path d="M666.0831044773408,43.64100301507839 q20.05290365144651,-18.04761328630186 40.10580730289302,0" stroke="#F7ECDA" stroke-width="3" fill="none" stroke-linecap="round" opacity="0.35" transform="rotate(114.2927180792098 686.1360081287874 43.64100301507839)"/>
+<path d="M38.70790166951829,63.118751620383904 q16.026799715199378,-14.42411974367944 32.053599430398755,0" stroke="#F7ECDA" stroke-width="3" fill="none" stroke-linecap="round" opacity="0.35" transform="rotate(227.37297795214505 54.73470138471767 63.118751620383904)"/>
+<path d="M699.0846958595962,439.8194770717824 q11.231458385277755,-10.10831254674998 22.46291677055551,0" stroke="#F7ECDA" stroke-width="3" fill="none" stroke-linecap="round" opacity="0.35" transform="rotate(310.96086011803243 710.3161542448739 439.8194770717824)"/>
+<path d="M107.07246530136837,441.10088001303217 q15.525236845044482,-13.972713160540033 31.050473690088964,0" stroke="#F7ECDA" stroke-width="3" fill="none" stroke-linecap="round" opacity="0.35" transform="rotate(209.11729869481528 122.59770214641286 441.10088001303217)"/>
+<path d="M649.4387165216585,133.06035823073398 q10.746469388877905,-9.671822449990115 21.49293877775581,0" stroke="#F7ECDA" stroke-width="3" fill="none" stroke-linecap="round" opacity="0.35" transform="rotate(318.66958613558387 660.1851859105365 133.06035823073398)"/>
+<path d="M173.5634560975224,171.58022799122384 q11.011232805839056,-9.91010952525515 22.02246561167811,0" stroke="#F7ECDA" stroke-width="3" fill="none" stroke-linecap="round" opacity="0.35" transform="rotate(141.9971459458805 184.57468890336145 171.58022799122384)"/>
+<path d="M261.7590642884103,269.7048095294986 q21.322462631448392,-19.190216368303552 42.644925262896784,0" stroke="#F7ECDA" stroke-width="3" fill="none" stroke-linecap="round" opacity="0.35" transform="rotate(177.88944850656148 283.0815269198587 269.7048095294986)"/>
+<path d="M373.2665576030175,411.8418853836421 q18.262018013080358,-16.435816211772323 36.524036026160715,0" stroke="#F7ECDA" stroke-width="3" fill="none" stroke-linecap="round" opacity="0.35" transform="rotate(73.26938522506623 391.52857561609784 411.8418853836421)"/>
+<path d="M715.756193950042,427.7416385465636 q13.086421786323612,-11.77777960769125 26.172843572647224,0" stroke="#F7ECDA" stroke-width="3" fill="none" stroke-linecap="round" opacity="0.35" transform="rotate(188.50450088182438 728.8426157363656 427.7416385465636)"/>
+<path d="M552.025947746583,212.4830920347369 q18.104018484470277,-16.29361663602325 36.208036968940554,0" stroke="#F7ECDA" stroke-width="3" fill="none" stroke-linecap="round" opacity="0.35" transform="rotate(220.73916456213462 570.1299662310533 212.4830920347369)"/>
+  <g transform="translate(450.0,263.2) scale(1.6)">
+    <g>
+      <path d="M0,-85 C60,-60 70,20 0,85 C-70,20 -60,-60 0,-85 Z" fill="#F7ECDA"/>
+      <path d="M0,-80 L0,80" stroke="#7C9885" stroke-width="6" opacity="0.7"/>
+      <path d="M0,-30 L35,-5 M0,20 L-35,45" stroke="#7C9885" stroke-width="5" opacity="0.6" fill="none"/>
+    </g>
+  </g>
+  <text x="450.0" y="524" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="22" fill="#F7ECDA" opacity="0.85">Sustainable Fibers</text>
+</svg>

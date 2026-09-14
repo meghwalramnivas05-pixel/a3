@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 620" width="900" height="620" role="img" aria-label="craftsmanship-knit.svg">
+  <rect width="900" height="620" fill="#E0A233"/>
+  <circle cx="364" cy="176" r="132" fill="#F7ECDA" opacity="0.21"/>
+<circle cx="506" cy="404" r="180" fill="#F7ECDA" opacity="0.15"/>
+<circle cx="617" cy="348" r="208" fill="#F7ECDA" opacity="0.18"/>
+<circle cx="694" cy="280" r="131" fill="#F7ECDA" opacity="0.12"/>
+  <path d="M549.6353549304564,44.95600141424815 q13.30035182042943,-11.970316638386487 26.60070364085886,0" stroke="#2E2A26" stroke-width="3" fill="none" stroke-linecap="round" opacity="0.35" transform="rotate(80.3558657335762 562.9357067508859 44.95600141424815)"/>
+<path d="M620.8355286603919,408.5983139819845 q20.706154812458145,-18.635539331212332 41.41230962491629,0" stroke="#2E2A26" stroke-width="3" fill="none" stroke-linecap="round" opacity="0.35" transform="rotate(31.297979746589814 641.5416834728501 408.5983139819845)"/>
+<path d="M374.13301824742575,47.626848446443255 q12.62365569764324,-11.361290127878917 25.24731139528648,0" stroke="#2E2A26" stroke-width="3" fill="none" stroke-linecap="round" opacity="0.35" transform="rotate(181.92790371721046 386.756673945069 47.626848446443255)"/>
+<path d="M48.69552219057526,141.95140908314985 q17.79861325335428,-16.01875192801885 35.59722650670856,0" stroke="#2E2A26" stroke-width="3" fill="none" stroke-linecap="round" opacity="0.35" transform="rotate(196.17893301715802 66.49413544392954 141.95140908314985)"/>
+<path d="M203.8437383728304,359.8102516027571 q19.71316548013392,-17.74184893212053 39.42633096026784,0" stroke="#2E2A26" stroke-width="3" fill="none" stroke-linecap="round" opacity="0.35" transform="rotate(2.339553484101966 223.5569038529643 359.8102516027571)"/>
+<path d="M683.6305877863584,420.5617824034306 q14.083006198215902,-12.674705578394311 28.166012396431803,0" stroke="#2E2A26" stroke-width="3" fill="none" stroke-linecap="round" opacity="0.35" transform="rotate(55.97261993224136 697.7135939845743 420.5617824034306)"/>
+<path d="M809.229638366931,218.8197561728457 q11.112950120561775,-10.001655108505599 22.22590024112355,0" stroke="#2E2A26" stroke-width="3" fill="none" stroke-linecap="round" opacity="0.35" transform="rotate(34.81789566004704 820.3425884874928 218.8197561728457)"/>
+<path d="M711.7848974621497,367.87912550272523 q19.685539279292563,-17.716985351363306 39.371078558585126,0" stroke="#2E2A26" stroke-width="3" fill="none" stroke-linecap="round" opacity="0.35" transform="rotate(262.70344320977443 731.4704367414423 367.87912550272523)"/>
+  <g transform="translate(450.0,291.4) scale(1.6)">
+    <g><circle cx="0" cy="0" r="78" fill="#2E2A26"/><circle cx="0" cy="0" r="70" fill="none" stroke="#2E2A26" stroke-width="7" opacity="0.85" stroke-dasharray="112.0,63.0" transform="rotate(0)"/><circle cx="0" cy="0" r="55" fill="none" stroke="#F7ECDA" stroke-width="7" opacity="0.85" stroke-dasharray="88.0,49.5" transform="rotate(35)"/><circle cx="0" cy="0" r="40" fill="none" stroke="#2E2A26" stroke-width="7" opacity="0.85" stroke-dasharray="64.0,36.0" transform="rotate(70)"/><circle cx="0" cy="0" r="25" fill="none" stroke="#F7ECDA" stroke-width="7" opacity="0.85" stroke-dasharray="40.0,22.5" transform="rotate(105)"/></g>
+  </g>
+  
+</svg>

@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630" role="img" aria-label="FuzzyStocking">
+  <rect width="1200" height="630" fill="#E4A79A"/>
+  <circle cx="524" cy="348" r="184" fill="#8C4A34" opacity="0.17"/>
+<circle cx="889" cy="550" r="198" fill="#8C4A34" opacity="0.20"/>
+<circle cx="667" cy="301" r="219" fill="#8C4A34" opacity="0.22"/>
+<circle cx="670" cy="381" r="121" fill="#8C4A34" opacity="0.20"/>
+  <path d="M1028.5412106544513,311.7963067191923 q16.789617454077764,-15.110655708669988 33.57923490815553,0" stroke="#F7ECDA" stroke-width="3" fill="none" stroke-linecap="round" opacity="0.35" transform="rotate(127.18616424447555 1045.3308281085292 311.7963067191923)"/>
+<path d="M170.63170437854785,233.00049367408752 q12.074112390704746,-10.866701151634272 24.148224781409493,0" stroke="#F7ECDA" stroke-width="3" fill="none" stroke-linecap="round" opacity="0.35" transform="rotate(43.88103815634063 182.7058167692526 233.00049367408752)"/>
+<path d="M217.31973237838267,50.1940201115563 q16.64090587794672,-14.97681529015205 33.28181175589344,0" stroke="#F7ECDA" stroke-width="3" fill="none" stroke-linecap="round" opacity="0.35" transform="rotate(42.870341273823314 233.9606382563294 50.1940201115563)"/>
+<path d="M710.563668645737,240.07689449141665 q20.881289970054603,-18.793160973049144 41.762579940109205,0" stroke="#F7ECDA" stroke-width="3" fill="none" stroke-linecap="round" opacity="0.35" transform="rotate(236.0396345362842 731.4449586157916 240.07689449141665)"/>
+<path d="M873.4216597396969,399.2830247065261 q19.023480524657973,-17.121132472192176 38.04696104931595,0" stroke="#F7ECDA" stroke-width="3" fill="none" stroke-linecap="round" opacity="0.35" transform="rotate(339.0459224294082 892.4451402643549 399.2830247065261)"/>
+<path d="M1122.894414526417,123.37896521871491 q13.551394187931422,-12.19625476913828 27.102788375862843,0" stroke="#F7ECDA" stroke-width="3" fill="none" stroke-linecap="round" opacity="0.35" transform="rotate(105.4063654096115 1136.4458087143485 123.37896521871491)"/>
+<path d="M268.7719949181647,466.9344862910979 q21.052587455250865,-18.94732870972578 42.10517491050173,0" stroke="#F7ECDA" stroke-width="3" fill="none" stroke-linecap="round" opacity="0.35" transform="rotate(23.048450201366258 289.8245823734156 466.9344862910979)"/>
+<path d="M230.21948560759336,552.0238460853745 q11.261208561278156,-10.13508770515034 22.522417122556313,0" stroke="#F7ECDA" stroke-width="3" fill="none" stroke-linecap="round" opacity="0.35" transform="rotate(29.29404906442231 241.4806941688715 552.0238460853745)"/>
+<path d="M1017.1275429018592,191.2309119363101 q10.177785772452356,-9.160007195207122 20.355571544904713,0" stroke="#F7ECDA" stroke-width="3" fill="none" stroke-linecap="round" opacity="0.35" transform="rotate(204.85781937485098 1027.3053286743116 191.2309119363101)"/>
+<path d="M250.0846823372301,250.40749825727187 q13.921610543850376,-12.529449489465339 27.84322108770075,0" stroke="#F7ECDA" stroke-width="3" fill="none" stroke-linecap="round" opacity="0.35" transform="rotate(294.54256356187653 264.00629288108047 250.40749825727187)"/>
+  <g transform="translate(600.0,296.1) scale(1.6)">
+    
+    <g>
+      <path d="M-40,-95 h80 v90 q0,10 -10,10 h-15 q45,5 55,55 q8,45 -35,55 q-55,12 -85,-25 q-18,-22 -10,-55 l20,-40 q10,-15 0,-90 z" fill="#F7ECDA"/>
+      <rect x="-40" y="-95" width="80" height="18" fill="#8C4A34" opacity="0.9" rx="6"/>
+      <path d="M-40,-45 q80,-14 96,20" stroke="#8C4A34" stroke-width="6" fill="none" opacity="0.55" stroke-linecap="round"/>
+    </g>
+  </g>
+  <text x="600.0" y="594" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="22" fill="#F7ECDA" opacity="0.85">FuzzyStocking</text>
+</svg>

@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 560" width="900" height="560" role="img" aria-label="Getting the Size Right">
+  <rect width="900" height="560" fill="#E0A233"/>
+  <circle cx="194" cy="275" r="157" fill="#F7ECDA" opacity="0.22"/>
+<circle cx="675" cy="410" r="177" fill="#F7ECDA" opacity="0.12"/>
+<circle cx="747" cy="250" r="166" fill="#F7ECDA" opacity="0.11"/>
+  <path d="M435.82216685962277,459.80907457917687 q11.064330678711435,-9.957897610840293 22.12866135742287,0" stroke="#2E2A26" stroke-width="3" fill="none" stroke-linecap="round" opacity="0.35" transform="rotate(136.2319333283886 446.8864975383342 459.80907457917687)"/>
+<path d="M72.5504410949494,355.4956347566511 q12.270229772374428,-11.043206795136985 24.540459544748856,0" stroke="#2E2A26" stroke-width="3" fill="none" stroke-linecap="round" opacity="0.35" transform="rotate(111.22407607569158 84.82067086732384 355.4956347566511)"/>
+<path d="M696.2635618985846,55.527068487970645 q11.842467071371402,-10.658220364234262 23.684934142742804,0" stroke="#2E2A26" stroke-width="3" fill="none" stroke-linecap="round" opacity="0.35" transform="rotate(108.47170980176922 708.106028969956 55.527068487970645)"/>
+<path d="M684.8686890250069,267.6225605322419 q17.513829801129482,-15.762446821016534 35.027659602258964,0" stroke="#2E2A26" stroke-width="3" fill="none" stroke-linecap="round" opacity="0.35" transform="rotate(324.3290982704903 702.3825188261364 267.6225605322419)"/>
+<path d="M219.16242284124795,252.70447569012182 q12.001122746858169,-10.801010472172353 24.002245493716337,0" stroke="#2E2A26" stroke-width="3" fill="none" stroke-linecap="round" opacity="0.35" transform="rotate(281.3698975069054 231.1635455881061 252.70447569012182)"/>
+<path d="M46.89394866683409,409.47870453559904 q14.190158222902607,-12.771142400612346 28.380316445805214,0" stroke="#2E2A26" stroke-width="3" fill="none" stroke-linecap="round" opacity="0.35" transform="rotate(206.6905967927245 61.084106889736695 409.47870453559904)"/>
+<path d="M182.1937386099573,497.60656547662353 q13.8061819503231,-12.42556375529079 27.6123639006462,0" stroke="#2E2A26" stroke-width="3" fill="none" stroke-linecap="round" opacity="0.35" transform="rotate(163.68160610452648 195.9999205602804 497.60656547662353)"/>
+<path d="M791.2643337407017,328.535859548366 q13.857336143316573,-12.471602528984915 27.714672286633146,0" stroke="#2E2A26" stroke-width="3" fill="none" stroke-linecap="round" opacity="0.35" transform="rotate(82.84234590051402 805.1216698840183 328.535859548366)"/>
+<path d="M765.1065514757223,389.6523184577627 q17.5435075322165,-15.78915677899485 35.087015064433,0" stroke="#2E2A26" stroke-width="3" fill="none" stroke-linecap="round" opacity="0.35" transform="rotate(199.61800714526993 782.6500590079388 389.6523184577627)"/>
+  <g transform="translate(450.0,263.2) scale(1.6)">
+    <g>
+      <rect x="-95" y="-25" width="190" height="50" rx="8" fill="#2E2A26"/>
+      <g stroke="#F7ECDA" stroke-width="4">
+        <line x1="-75" y1="-25" x2="-75" y2="10"/>
+        <line x1="-45" y1="-25" x2="-45" y2="0"/>
+        <line x1="-15" y1="-25" x2="-15" y2="10"/>
+        <line x1="15" y1="-25" x2="15" y2="0"/>
+        <line x1="45" y1="-25" x2="45" y2="10"/>
+        <line x1="75" y1="-25" x2="75" y2="0"/>
+      </g>
+    </g>
+  </g>
+  <text x="450.0" y="524" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="22" fill="#2E2A26" opacity="0.85">Getting the Size Right</text>
+</svg>

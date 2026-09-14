@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 620" width="900" height="620" role="img" aria-label="sustainability-leaf.svg">
+  <rect width="900" height="620" fill="#E4A79A"/>
+  <circle cx="550" cy="74" r="146" fill="#8C4A34" opacity="0.13"/>
+<circle cx="620" cy="398" r="222" fill="#8C4A34" opacity="0.11"/>
+<circle cx="394" cy="77" r="139" fill="#8C4A34" opacity="0.16"/>
+<circle cx="109" cy="161" r="192" fill="#8C4A34" opacity="0.17"/>
+<circle cx="249" cy="354" r="212" fill="#8C4A34" opacity="0.10"/>
+  <path d="M64.4997912065335,419.49317203147547 q11.727198656744331,-10.554478791069899 23.454397313488663,0" stroke="#F7ECDA" stroke-width="3" fill="none" stroke-linecap="round" opacity="0.35" transform="rotate(166.51161173847152 76.22698986327784 419.49317203147547)"/>
+<path d="M573.5956081937967,473.4668095836542 q15.438270741594549,-13.894443667435095 30.876541483189097,0" stroke="#F7ECDA" stroke-width="3" fill="none" stroke-linecap="round" opacity="0.35" transform="rotate(179.37800272729842 589.0338789353913 473.4668095836542)"/>
+<path d="M46.04876132987058,272.27297213490357 q14.468496169851115,-13.021646552866004 28.93699233970223,0" stroke="#F7ECDA" stroke-width="3" fill="none" stroke-linecap="round" opacity="0.35" transform="rotate(306.8239079487071 60.517257499721694 272.27297213490357)"/>
+<path d="M472.84814480948774,452.466795746271 q15.20881766622681,-13.68793589960413 30.41763533245362,0" stroke="#F7ECDA" stroke-width="3" fill="none" stroke-linecap="round" opacity="0.35" transform="rotate(63.42771754248824 488.05696247571456 452.466795746271)"/>
+<path d="M719.6986545255401,488.6827527843408 q14.510299428117387,-13.059269485305649 29.020598856234773,0" stroke="#F7ECDA" stroke-width="3" fill="none" stroke-linecap="round" opacity="0.35" transform="rotate(34.46752084658752 734.2089539536574 488.6827527843408)"/>
+<path d="M440.800968582256,307.75529923898705 q19.267611895816188,-17.34085070623457 38.535223791632376,0" stroke="#F7ECDA" stroke-width="3" fill="none" stroke-linecap="round" opacity="0.35" transform="rotate(214.99809080475706 460.0685804780722 307.75529923898705)"/>
+  <g transform="translate(450.0,291.4) scale(1.6)">
+    <g>
+      <path d="M0,-85 C60,-60 70,20 0,85 C-70,20 -60,-60 0,-85 Z" fill="#F7ECDA"/>
+      <path d="M0,-80 L0,80" stroke="#8C4A34" stroke-width="6" opacity="0.7"/>
+      <path d="M0,-30 L35,-5 M0,20 L-35,45" stroke="#8C4A34" stroke-width="5" opacity="0.6" fill="none"/>
+    </g>
+  </g>
+  
+</svg>

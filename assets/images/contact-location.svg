@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 560" width="800" height="560" role="img" aria-label="Visit or Write to Us">
+  <rect width="800" height="560" fill="#C1573A"/>
+  <circle cx="259" cy="281" r="164" fill="#3F5B4E" opacity="0.16"/>
+<circle cx="456" cy="274" r="159" fill="#3F5B4E" opacity="0.12"/>
+<circle cx="151" cy="170" r="188" fill="#3F5B4E" opacity="0.10"/>
+<circle cx="305" cy="245" r="163" fill="#3F5B4E" opacity="0.15"/>
+  <path d="M647.6411511288472,287.70103357061345 q11.363329409295778,-10.2269964683662 22.726658818591556,0" stroke="#F7ECDA" stroke-width="3" fill="none" stroke-linecap="round" opacity="0.35" transform="rotate(43.42142289874491 659.0044805381431 287.70103357061345)"/>
+<path d="M241.36350682631362,469.2079677545962 q21.20377885251762,-19.083400967265856 42.40755770503524,0" stroke="#F7ECDA" stroke-width="3" fill="none" stroke-linecap="round" opacity="0.35" transform="rotate(126.50844308165253 262.56728567883124 469.2079677545962)"/>
+<path d="M336.90876056166394,258.1853508958145 q21.08963691692127,-18.980673225229143 42.17927383384254,0" stroke="#F7ECDA" stroke-width="3" fill="none" stroke-linecap="round" opacity="0.35" transform="rotate(160.5594487600772 357.9983974785852 258.1853508958145)"/>
+<path d="M255.57767683813324,281.3691579312501 q10.036148192528278,-9.03253337327545 20.072296385056557,0" stroke="#F7ECDA" stroke-width="3" fill="none" stroke-linecap="round" opacity="0.35" transform="rotate(185.1261092421381 265.61382503066153 281.3691579312501)"/>
+<path d="M116.31968232585743,442.54214771900695 q15.261023624723887,-13.734921262251499 30.522047249447773,0" stroke="#F7ECDA" stroke-width="3" fill="none" stroke-linecap="round" opacity="0.35" transform="rotate(343.1615145132508 131.58070595058132 442.54214771900695)"/>
+<path d="M320.4797600301396,163.68424213420207 q21.940809696663095,-19.746728726996785 43.88161939332619,0" stroke="#F7ECDA" stroke-width="3" fill="none" stroke-linecap="round" opacity="0.35" transform="rotate(314.27450386673104 342.4205697268027 163.68424213420207)"/>
+  <g transform="translate(400.0,263.2) scale(1.6)">
+    <g>
+      <path d="M-80,-20 L0,-55 L80,-20 L80,55 L0,90 L-80,55 Z" fill="#F7ECDA"/>
+      <path d="M-80,-20 L0,-55 L80,-20 L0,15 Z" fill="#3F5B4E" opacity="0.9"/>
+      <path d="M0,15 L0,90" stroke="#2E2A26" stroke-width="4" opacity="0.25"/>
+      <path d="M-30,-40 L-30,32" stroke="#2E2A26" stroke-width="6" opacity="0.35"/>
+    </g>
+  </g>
+  <text x="400.0" y="524" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="22" fill="#F7ECDA" opacity="0.85">Visit or Write to Us</text>
+</svg>
