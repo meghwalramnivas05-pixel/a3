@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://www.fuzzystocking.com/sitemap.xml
+Sitemap: https://fuzzystocking.com/sitemap.xml
